@@ -1,0 +1,124 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(45deg, #535353 10%, #171717 90%);
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-wrap: nowrap;
+    width: 100%;
+    gap: 100px;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    text-wrap: nowrap;
+    width: 50%;
+    gap: 20px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: flex-start;
+    align-items: flex-start;
+    text-wrap: wrap;
+    gap: 10px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: flex-start;
+    text-wrap: wrap;
+    width: 50%;
+    gap: 5px;
+}
+
+.image-wrapper > img{
+    width: 400px;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: flex-start;
+    text-wrap: wrap;
+    gap: 10px;
+}
+
+.main-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-wrap: nowrap;
+    height: 45px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: x-large;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-size: 300%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-position 0.5s ease;
+    transition: background 0.3s ease;
+}
+
+.green-button {
+    background-image: linear-gradient(90deg, rgb(16, 173, 116) 12.5%, rgb(16, 173, 116) 37.5%, #00ff4c 62.5%, #d9ff00 87.5%);
+    color: black;
+}
+
+.black-button {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 37.5%, #000734 62.5%, #0047ab 87.5%);
+    color: white;
+}
+
+.main-button:hover {
+    background-position-x: 100%;
+}
+
+.main-text-special {
+    color: rgb(0, 159, 190);
+}
+
+.main-text-indent {
+    text-indent: 20px;
+}
+
+.extra-big-text {
+    font-size: x-large;
+}
+
+.big-text {
+    font-size: larger;
+}
