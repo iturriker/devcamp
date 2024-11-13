@@ -7,6 +7,7 @@ It is not the latest version of CodePen's homepage. It is more likely to the **d
 
 > [!NOTE]
 > The project has a total of 5 files consisting of 4 CSS and a HTML, wich are all in the same folder.
+> 
 > The lenguage used is purely HTML and CSS without any frameworks or preprocessor.
 > Some simple SVG are implemented in the HTML with code provided by AI.
 
