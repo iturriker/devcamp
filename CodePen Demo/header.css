@@ -1,61 +1,37 @@
+/* THIS IS THE CSS FOR BODY > HEADER */
+
 header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
     align-items: center;
-    text-wrap: nowrap;
     width: 100%;
-    height: auto;
     border-color: rgb(155, 154, 154);
     border-width: 0px 0px 1px 0px;
     border-style: solid;
+    padding: 10px 30px;
 }
 
-.header-nav {
+.header-column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    text-wrap: nowrap;
+    padding: 10px;
 }
 
 .header-left {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-start;
-    text-wrap: nowrap;
-    padding: 10px;
+    align-items: center;
 }
 
 .header-mid {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
     align-items: flex-start;
-    text-wrap: nowrap;
-    padding: 10px;
     margin-left: 20px;
 }
 
 .header-right {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
     align-items: flex-end;
-    text-wrap: nowrap;
     width: 100%;
-    padding: 10px;
 }
 
 .header-logo {
@@ -64,13 +40,25 @@ header {
     stroke-width: 2.3;
     stroke-linecap: round;
     stroke-linejoin: round;
-    width: 200px;
+    width: 300px;
 }
 
-.header-span {
+.header-extra {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-extra > span {
     text-transform: uppercase;
-    padding: 2px 10px;
+    font-weight: 600;
+    padding: 0px 10px;
     color: rgb(227, 227, 5);
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .header-list {
@@ -81,55 +69,60 @@ header {
     text-align: center;
     text-wrap: nowrap;
     align-items: center;
-    padding: 2px 10px;
+    padding: 0px 10px;
     gap: 20px;
 }
 
-.header-list-item {
+.header-list > li {
     font-weight: 900;
-    font-size: larger;
-}
-
-.header-extra {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-start;
-    text-wrap: nowrap;
 }
 
 .header-only {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    text-align: center;
-    align-items: flex-start;
-    text-wrap: nowrap;
+    align-items: center;
     width: 100%;
-    margin: 0px 20px;
-    padding: 2px 10px;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 10px;
     gap: 10px;
 }
 
 .header-only > a {
     color:rgb(185, 185, 185);
-    font-weight: 400;
-    font-size: larger;
+    font-weight: 600;
+}
+
+.header-only > a:hover {
+    color: rgb(32, 97, 238);
 }
 
 .header-only > svg {
     cursor: pointer;
-    stroke: rgb(255, 255, 255);
+    stroke: rgb(185, 185, 185);
     stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
-    width: 30px;
+    width: 40px;
+    transition: stroke 0.3s ease;
 }
 
-.header-button {
+.header-only > svg:hover {
+    stroke: rgb(32, 97, 238);
+}
+
+.header-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 20px;
+}
+
+.header-button-wrapper > button {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -137,36 +130,33 @@ header {
     text-align: center;
     align-items: center;
     text-wrap: nowrap;
-    height: 45px;
     cursor: pointer;
     font-weight: 600;
-    font-size: medium;
-    color: white;
-    padding: 8px 15px;
+    padding: 15px 20px;
     border-radius: 5px;
-    background-color:rgb(87, 87, 87);
-    transition: background 0.3s ease;
+    background-color:rgb(73, 73, 73);
+    transition: background-color 0.3s ease;
 }
 
-.header-button:hover {
-    background-color: rgb(152, 152, 152);
+.header-button-wrapper > button:hover {
+    background-color: rgb(126, 126, 126);
 }
 
-.header-button > svg {
+.header-button-wrapper > button > svg {
     cursor: pointer;
     fill: none;
-    stroke: rgb(12, 124, 0);
+    stroke: rgb(20, 204, 0);
     stroke-width: 2.5;
     stroke-linecap: round;
     stroke-linejoin: round;
-    width: 30px;
+    width: 40px;
 }
 
 .magnifying-svg {
     cursor: pointer;
-    stroke: rgb(185, 185, 185);
+    stroke: rgb(126, 126, 126);
     stroke-width: 2.5;
     stroke-linecap: round;
     stroke-linejoin: round;
-    width: 30px;
+    width: 55px;
 }

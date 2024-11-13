@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!---<METADATA FOR WEB SEARCH>--->
 		<meta charset="UTF-8">
 		<meta name="description" content="Hi! This is a CodePen.io homepage demo. Build, share, and learn JavaScript, CSS, and HTML with our online code editor.">
 		<meta name="keywords" content="css, editor, code, frontend, developer, designer, test, demo, web, html, modern, codepen">
 		<meta name="author" content="Iker Karkokli Iturrioz">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<meta property="og:title" content="CodePen: Online Code Editor and Front End Web Developer Community">
-		<meta property="og:description" content="Hi! This is a CodePen.io homepage demo.">
-		<meta property="og:image" content="https://blog.codepen.io/wp-content/uploads/2023/09/logo-black.png">
-		<!---<meta property="og:url" content="https://iturriker.github.io/portfolio/">--->
-		<meta property="og:type" content="website">
-
 		<title>CodePen: Online Code Editor and Front End Web Developer Community</title>
 		<link rel="icon" href="https://blog.codepen.io/wp-content/uploads/2023/09/logo-black.png">
 
+		<!---<METADATA FOR SHARED LINK>--->
+		<meta property="og:title" content="CodePen: Online Code Editor and Front End Web Developer Community">
+		<meta property="og:description" content="Hi! This is a CodePen.io homepage demo.">
+		<meta property="og:image" content="https://blog.codepen.io/wp-content/uploads/2023/09/logo-black.png">
+		<meta property="og:url" content="https://github.com/iturriker/devcamp/tree/main/CodePen%20Demo">
+		<meta property="og:type" content="website">
+
+		<!---<GOOGLE FONTS>--->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="index.css">
+		<!---<CSS LINKS>--->
+		<link rel="stylesheet" href="common.css">
 		<link rel="stylesheet" href="header.css">
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="footer.css">
 	</head>
 
 	<body>
-		<header>
-			<div class="header-left">
+		<header> <!---HEADER IS DIVIDED IN 3: LEFT, MID, RIGHT--->
+			<div class="header-column header-left">
 				<svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26">
 					<path d="M80 6h-9v14h9 M114 6h-9 v14h9 M111 13h-6 M77 13h-6 M122 20V6l11 14V6 M22 16.7L33 24l11-7.3V9.3L33 2L22 9.3V16.7z M44 16.7L33 9.3l-11 7.4 M22 9.3l11 7.3 l11-7.3 M33 2v7.3 M33 16.7V24 M88 14h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14 M15 8c-1.3-1.3-3-2-5-2c-4 0-7 3-7 7s3 7 7 7 c2 0 3.7-0.8 5-2 M64 13c0 4-3 7-7 7h-5V6h5C61 6 64 9 64 13z"/>
 				</svg>
 			</div>
 
-			<div class="header-mid">
+			<div class="header-column header-mid">
 				<div class="header-extra">
-					<span class="header-span">Explore</span>
+					<span>Explore</span>
 				</div>
 				<nav class="header-nav">
 					<ul class="header-list">
-						<li class="header-list-item"><a href="">Pens</a></li>
-						<li class="header-list-item"><a href="">Projects</a></li>
-						<li class="header-list-item"><a href="">Posts</a></li>
-						<li class="header-list-item"><a href="">Collections</a></li>
+						<li><a href="">Pens</a></li>
+						<li><a href="">Projects</a></li>
+						<li><a href="">Posts</a></li>
+						<li><a href="">Collections</a></li>
 					</ul>
 					<div class="header-only">
 						<a href="">Spark</a>
@@ -54,10 +57,9 @@
 				</nav>
 			</div>
 
-			<div class="header-right">
-				<ul class="header-list">
-					<button class="header-button">
-						<span href="">Create</span>
+			<div class="header-column header-right">
+				<div class="header-button-wrapper">
+					<button type="button" value="Create">Create
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 							<path d="M7 10l5 5 5-5"/>
 						</svg>
@@ -65,46 +67,38 @@
 					<svg class="magnifying-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
 						<circle cx="11" cy="11" r="7"/>
 						<line x1="16" y1="16" x2="21" y2="21"/>
-						</svg>
-						<button class="header-button">
-						<span href="">Log In</span>
-					</button>
-					<button class="header-button">
-						<span href="">Sign Up</span>
-					</button>
-				</ul>
+					</svg>
+					<button type="button" value="Log In">Log In</button>
+					<button type="button" value="Sign Up">Sign Up</button>
+				</div>
 			</div>
 		</header>
-
-		<main>
+		
+		<main> <!---MAIN IS DIVIDED IN 2: CONTAINER WRAPPER, IMAGE WRAPPER--->
 			<section class="main-section">
 				<div class="container-wrapper">
 					<div class="text-wrapper">
-						<p class="extra-big-text">CodePen is a <strong>social development enviroment</strong> for front-end designers and developers.</p>
-						<p class="big-text">It's the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
+						<p class="main-text">CodePen is a <strong>social development enviroment</strong> for front-end designers and developers.&#128075</p>
+						<p class="sub-text">It's the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
 					</div>
 					<div class="button-wrapper">
-						<button class="main-button green-button">
-							<span href="">Sign Up for Free</span>
-						</button>
-						<button class="main-button black-button">
-							<span href="">Learn More</span>
-						</button>
+						<button class="green-button" type="button" value="Sign Up for Free">Sign Up for Free</button>
+						<button class="black-button" type="button" value="Learn More">Learn More</button>
 					</div>
 				</div>
 				<div class="image-wrapper">
 					<p class="main-text-indent">This is <span class="main-text-special">CodePen Projects</span>!</p>
-					<img src="https://i.imgur.com/lmr7a8E.png" alt="large">
+					<img src="https://i.imgur.com/lmr7a8E.png" alt="CodePen project Image">
 				</div>
 			</section>
 		</main>
 
 		<footer>
 			<ul class="footer-list">
-				<li class="footer-list-item"><a href="" target="_blank" rel="noopener noreferrer">CodePen for <span class="for-word">teams</span></a></li>
-				<li class="footer-list-item"><a href="" target="_blank" rel="noopener noreferrer">CodePen for <span class="for-word">education</span></a></li>		
-				<li class="footer-list-item"><a href="" target="_blank" rel="noopener noreferrer">CodePen for <span class="for-word">privacy</span></a></li>
-				<li class="footer-list-item"><a href="" target="_blank" rel="noopener noreferrer">CodePen for <span class="for-word">writing</span></a></li>
+				<li><a href="">CodePen for <span>teams</span></a></li>
+				<li><a href="">CodePen for <span>education</span></a></li>		
+				<li><a href="">CodePen for <span>privacy</span></a></li>
+				<li><a href="">CodePen for <span>writing</span></a></li>
 			</ul>
 		</footer>
 	</body>

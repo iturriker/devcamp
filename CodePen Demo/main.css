@@ -1,11 +1,11 @@
+/* THIS IS THE CSS FOR BODY > MAIN */
+
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 40px 80px;
     background: linear-gradient(45deg, #535353 10%, #171717 90%);
 }
 
@@ -18,7 +18,7 @@ main {
     align-items: center;
     text-wrap: nowrap;
     width: 100%;
-    gap: 100px;
+    gap: 200px;
 }
 
 .container-wrapper {
@@ -26,11 +26,8 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    text-align: center;
     align-items: flex-start;
-    text-wrap: nowrap;
-    width: 50%;
-    gap: 20px;
+    gap: 50px;
 }
 
 .text-wrapper {
@@ -38,40 +35,55 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    text-align: flex-start;
+    text-align: left;
     align-items: flex-start;
     text-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
+}
+
+.main-text {
+    font-size: 2rem;
+    color: rgb(211, 211, 211);
+}
+
+.main-text > strong {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.sub-text {
+    font-size: 1.6rem;
+    color: rgb(211, 211, 211);
 }
 
 .image-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    text-align: center;
-    align-items: flex-start;
-    text-wrap: wrap;
-    width: 50%;
+    text-align: left;
     gap: 5px;
 }
 
+.image-wrapper > p{
+    font-weight: 600;
+}
+
 .image-wrapper > img{
-    width: 400px;
+    width: 600px;
 }
 
 .button-wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     text-align: center;
     align-items: flex-start;
-    text-wrap: wrap;
-    gap: 10px;
+    text-wrap: nowrap;
+    gap: 20px;
 }
 
-.main-button {
+.button-wrapper > button {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -79,22 +91,19 @@ main {
     text-align: center;
     align-items: center;
     text-wrap: nowrap;
-    height: 45px;
     cursor: pointer;
+    font-size: 2rem;
     font-weight: 600;
-    font-size: x-large;
-    color: white;
-    padding: 8px 15px;
+    padding: 15px 30px;
     border-radius: 5px;
     background-size: 300%;
     background-position-x: 0%;
     background-repeat: no-repeat;
     transition: background-position 0.5s ease;
-    transition: background 0.3s ease;
 }
 
 .green-button {
-    background-image: linear-gradient(90deg, rgb(16, 173, 116) 12.5%, rgb(16, 173, 116) 37.5%, #00ff4c 62.5%, #d9ff00 87.5%);
+    background-image: linear-gradient(90deg, rgb(16, 173, 81) 12.5%, rgb(16, 173, 81) 37.5%, #00ff4c 62.5%, #d9ff00 87.5%);
     color: black;
 }
 
@@ -103,22 +112,14 @@ main {
     color: white;
 }
 
-.main-button:hover {
+.button-wrapper > button:hover {
     background-position-x: 100%;
-}
-
-.main-text-special {
-    color: rgb(0, 159, 190);
 }
 
 .main-text-indent {
     text-indent: 20px;
 }
 
-.extra-big-text {
-    font-size: x-large;
-}
-
-.big-text {
-    font-size: larger;
+.main-text-special {
+    color: rgb(0, 159, 190);
 }

@@ -1,37 +1,27 @@
+/* THIS IS THE COMMON CSS FOR TAGS */
+
+/* APPROACH TO RESET SOME PROPERTIES */
 *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-    cursor: default;
     font-family: "Lato";
     line-height: 1.5;
-    font-size: 15px;
-    font-weight: 400;
-    transition: all 0.5 ease;
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+/* GENERAL PROPERTIES */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    text-align: center;
-    align-items: center;
-    align-content: stretch;
     background-color: black;
-    color: white;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center; 
 }
 
 ul {
@@ -40,7 +30,10 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    transition: color 0.3s ease;
+}
+
+span {
     transition: color 0.3s ease;
 }
 
@@ -53,6 +46,10 @@ strong {
     font-weight: 700;
 }
 
-a:hover, a:focus{
+a:hover {
+    color: rgb(166, 238, 32);
+}
+
+a:hover span {
     color: rgb(166, 238, 32);
 }

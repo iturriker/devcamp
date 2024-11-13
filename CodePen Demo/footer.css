@@ -1,11 +1,10 @@
+/* THIS IS THE CSS FOR BODY > FOOTER */
+
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
     align-items: center;
     width: 100%;
-    height: auto;
 }
 
 .footer-list {
@@ -17,10 +16,10 @@ footer {
     text-wrap: nowrap;
     align-items: center;
     width: 100%;
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(58, 58, 58);
 }
 
-.footer-list-item {
+.footer-list > li {
     font-weight: bold;
     border-color: rgb(155, 154, 154);
     border-width: 1px;
@@ -29,8 +28,8 @@ footer {
     width: 100%;
 }
 
-.for-word {
+.footer-list > li > a > span {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: larger;
+    font-size: 1.6rem;
 }
