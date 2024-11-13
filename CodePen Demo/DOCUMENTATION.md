@@ -1,6 +1,7 @@
 # PROJECT DOCUMENTATION
 
 **This project is a demo of the [CodePen](https://codepen.io/) ![image](https://blog.codepen.io/wp-content/uploads/2023/09/logo-black.png) landing page.**
+![Alt text](https://blog.codepen.io/wp-content/uploads/2023/09/logo-black.png)
 
 It has been made for educational purposes. The finality is to show off CSS and HTML capabilities.
 It is not the latest version of CodePen's homepage. It is more likely to the **december 2016** version. See more at [Internet Archive](http://web.archive.org/web/20161230130750/http://codepen.io/).
