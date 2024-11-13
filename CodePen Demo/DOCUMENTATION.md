@@ -10,9 +10,9 @@ The project is not the latest version of [CodePen](https://codepen.io/). It is m
 > Some simple SVG are implemented in the HTML with code provided by AI.
 
 > [!TIP]
-- > BEM standard use would be helpfull for a more complex project.
-- > -A reset CSS file would be usefull intead of using: `* {}`
-> -A normalize CSS file would be usefull too.
+> BEM standard use would be helpfull for a more complex project.
+> A reset CSS file would be usefull intead of using: `* {}`
+> A normalize CSS file would be usefull too.
 
 > [!WARNING]
 > The page does not have any functionality features such as drop-down, scrolling, etc.
