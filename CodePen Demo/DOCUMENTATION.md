@@ -1,8 +1,9 @@
 # PROJECT DOCUMENTATION
 
-**This project is a demo of the CodePen.io landing page for educational purposes. The finality of this project is to show off CSS and HTML capabilities.**
+**This project is a demo of the [CodePen](https://codepen.io/) landing page.**
 
-The project is not the latest version of [CodePen](https://codepen.io/). It is more likely to the **december 2016** version: [Internet Archive](http://web.archive.org/web/20161230130750/http://codepen.io/).
+It has been made for educational purposes. The finality is to show off CSS and HTML capabilities.
+It is not the latest version of CodePen's homepage. It is more likely to the **december 2016** version. See more at [Internet Archive](http://web.archive.org/web/20161230130750/http://codepen.io/).
 
 > [!NOTE]
 > The project has a total of 5 files consisting of 4 CSS and a HTML, wich are all in the same folder.
