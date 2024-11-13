@@ -3,13 +3,14 @@
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     border-color: rgb(155, 154, 154);
     border-width: 0px 0px 1px 0px;
     border-style: solid;
     padding: 10px 30px;
+    gap: 20px;
 }
 
 .header-column {
@@ -26,12 +27,10 @@ header {
 
 .header-mid {
     align-items: flex-start;
-    margin-left: 20px;
 }
 
 .header-right {
     align-items: flex-end;
-    width: 100%;
 }
 
 .header-logo {

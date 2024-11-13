@@ -10,7 +10,7 @@ footer {
 .footer-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     text-wrap: nowrap;
@@ -24,8 +24,9 @@ footer {
     border-color: rgb(155, 154, 154);
     border-width: 1px;
     border-style: solid;
+    width: 25%;
+    min-width: fit-content;
     padding: 10px;
-    width: 100%;
 }
 
 .footer-list > li > a > span {

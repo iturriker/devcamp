@@ -2,23 +2,14 @@
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 40px 80px;
-    background: linear-gradient(45deg, #535353 10%, #171717 90%);
-}
-
-.main-section {
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    text-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
-    gap: 200px;
+    padding: 40px 80px;
+    gap: 100px;
+    background: linear-gradient(45deg, #535353 10%, #171717 90%);
 }
 
 .container-wrapper {
@@ -42,17 +33,17 @@ main {
 }
 
 .main-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(211, 211, 211);
 }
 
 .main-text > strong {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(255, 255, 255);
 }
 
 .sub-text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: rgb(211, 211, 211);
 }
 
@@ -92,7 +83,7 @@ main {
     align-items: center;
     text-wrap: nowrap;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding: 15px 30px;
     border-radius: 5px;
