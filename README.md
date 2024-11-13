@@ -1,4 +1,4 @@
-#DevCamp Projects
+# DevCamp Projects
 
 This repostory is a collection of educational projects :blue_book: for the [DevCamp Digital Literacy](https://devcamp.es/fundamentos-de-programacion-digital-literacy/) program.
 
