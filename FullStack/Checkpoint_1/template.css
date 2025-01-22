@@ -24,6 +24,7 @@ html {
     background-image: url("https://basque.devcamp.com/assets/background-footer-cf669f3b75617a2438a123e2b1af8befdfc079908430bef6f29f42f14e3f596e.png");
     background-position: left bottom;
     background-repeat: no-repeat;
+    min-height: 100dvh;
 }
 
 main {

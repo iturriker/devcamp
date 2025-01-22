@@ -2,9 +2,9 @@
 const path = "https://github.com/iturriker/devcamp/blob/main/FullStack/";
 
 const data = [
-  {name: "Checkpoint_1", number: 1, href: path + "Checkpoint_1/index.html"},
-  {name: "Checkpoint_2", number: 2, href: path + "Checkpoint_2/index.html"},
-  {name: "Checkpoint_3", number: 3, href: path + "Checkpoint_3/index.html"}
+  {name: "Checkpoint_1", number: 1, href: path + "Checkpoint_1/proposal.html"},
+  {name: "Checkpoint_2", number: 2, href: path + "Checkpoint_2/proposal.html"},
+  {name: "Checkpoint_3", number: 3, href: path + "Checkpoint_3/proposal.html"}
 ];
 
 /* CONSTRUIR LA INTERFAZ */
