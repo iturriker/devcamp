@@ -1,7 +1,9 @@
+const path = "https://github.com/iturriker/devcamp/blob/main/FullStack/";
+
 const checkpoints = [
-  {name: "Checkpoint_1", href: "/Checkpoint_1/proposal.html"},
-  {name: "Checkpoint_2", href: "/Checkpoint_2/proposal.html"},
-  {name: "Checkpoint_3", href: "/Checkpoint_3/proposal.html"}
+  {name: "Checkpoint_1", href: path + "Checkpoint_1/proposal.html"},
+  {name: "Checkpoint_2", href: path + "Checkpoint_2/proposal.html"},
+  {name: "Checkpoint_3", href: path + "Checkpoint_3/proposal.html"}
 ];
 
 const checkpointList = document.querySelector(".checkpoint-list");
