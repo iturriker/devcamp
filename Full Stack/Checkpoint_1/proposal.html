@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="template.css">
+        <link rel="stylesheet" href="proposal.css">
+	</head>
+
+	<body>
+        <!--<header>
+            <nav>
+                <ul class="checkpoint-list">
+                    <li><a href="/" class="checkpoint">1</a></li>
+                    <li><a href="/" class="checkpoint">2</a></li>
+                    <li><a href="/" class="checkpoint">3</a></li>
+                </ul>
+            </nav>
+        </header>-->
+
+        <header>
+            <nav>
+                <ul class="checkpoint-list"></ul>
+            </nav>
+        </header>
+
+        <a href="/" id="previous" class="link">back</a>
+        <a href="/" id="next" class="link">next</a>
+
+        <script src="template.js"></script>
+
+		<main>
+            <div class="wrapper">
+                <h1 class="title">Checkpoint 1</h1>
+                <section>
+                    <article>
+                        <h2 class="subtitle">Grid 1</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <ul>
+                                <li>Create a div tag with the class of “gridOne”</li>
+                                <li>Create two paragraph tags that respectively say “Hello World” and “My Fantastic Content”</li>
+                                <li>This grid should have two equally sized columns</li>
+                                <li>Use inline styling to turn the text of the second paragraph tag blue</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <div class="grid gridOne">
+                                <p>Hello World</p>
+                                <p>My Fantastic Content</p>
+                            </div>
+                            <style>
+                                .gridOne p:nth-child(2) {
+                                  color: blue;
+                                }
+                            </style>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2 class="subtitle">Grid 2</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <ul>
+                                <li>Create another div tag in the same HTML file</li>
+                                <li>Make sure that none of the grids are nested inside each other</li>
+                                <li>Give this div the class of “gridTwo”</li>
+                                <li>Create three divs inside of gridTwo</li>
+                                <li>Assign them each a unique class</li>
+                                <li>Add a paragraph tag to each of the divs with whatever text you would like</li>
+                                <li>Each child div should have its own different background color</li>
+                                <li>Try using red, blue, and yellow</li>
+                                <li>This grid should have three columns</li>
+                                <li>The third column should be twice as large as the first two columns</li>
+                                <li>The background colors will help you identify if the sizes created by your grid-template-columns are correct</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <div class="grid gridTwo">
+                                <div class="d21">
+                                    <p>Hello World in red</p>
+                                </div>
+                                <div class="d22">
+                                    <p>Hello World in blue</p>
+                                </div>
+                                <div class="d23">
+                                    <p>Hello World in yellow</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2 class="subtitle">Grid 3</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <ul>
+                                <li>Create another div tag in the same HTML file</li>
+                                <li>Give this div the class of “gridThree”</li>
+                                <li>Create two child divs inside of gridThree and give them both a unique class</li>
+                                <li>The first child div should contain a paragraph tag and the second should contain an image of your choice</li>
+                                <li>This grid should have two rows</li>
+                                <li>The second row should be three times as large as the first</li>
+                                <li>Use background colors again to help make the sizes clear</li>
+                                <li>Give gridThree a width of 500 pixels and a height of 300 pixels</li>
+                                <li>Make sure that you give the image a width of 500 pixels and a height of 225 pixels</li>
+                                <li>You will also need to make sure that the image will not be distorted or too large for the row</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <div class="grid gridThree">
+                                <div class="d31">
+                                    <p>Hello World</p>
+                                </div>
+                                <div class="d32">
+                                    <img src="https://picsum.photos/500/225">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2 class="subtitle">Grid 4</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <ul>
+                                <li>Create another div tag in the same HTML file</li>
+                                <li>Give this div the class of “gridFour”</li>
+                                <li>Create two child divs and give the first a unique class name and the second an ID</li>
+                                <li>The first div should contain a paragraph tag</li>
+                                <li>The second should contain two paragraph tags</li>
+                                <li>GridFour should have two equally sized rows</li>
+                                <li>Now we will deal with a nested grid</li>
+                                <li>Select the second child div by its ID</li>
+                                <li>Use CSS Grid to create another grid in that div</li>
+                                <li>There should be two grid columns of equal size</li>
+                                <li>Give gridFour a width of 500 pixels and a background color of green</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <div class="grid gridFour">
+                                <div class="d41">
+                                    <p>Hello World</p>
+                                </div>
+                                <div id="d42">
+                                    <p>Create World</p>
+                                    <p>Destroy World</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2 class="subtitle">Grid 5</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <ul>
+                                <li>Create another grid following the same instructions as in Grid 4, with the exception of the second child div</li>
+                                <li>Give this div the class of “gridFive”</li>
+                                <li>The second child div should have two images instead of two paragraph tags</li>
+                                <li>The first picture should be twice as wide as the second</li>
+                                <li>You will also have to resize these images so that they fit, try making each 200 pixels tall and wide</li>
+                                <li>Make sure to use object-fit: cover; again</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <div class="grid gridFive">
+                                <div class="d51">
+                                    <p>Hello World</p>
+                                </div>
+                                <div id="d52">
+                                    <img src="https://picsum.photos/seed/1/200/200">
+                                    <img src="https://picsum.photos/seed/2/200/200">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2 class="subtitle">Grid 6</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <ul>
+                                <li>Create another div tag in the same HTML file</li>
+                                <li>Give this div the class of “gridSix”</li>
+                                <li>There should be two elements inside of gridSix</li>
+                                <li>The first should be a font-awesome icon of your choice</li>
+                                <li>The second element should be a paragraph tag</li>
+                                <li>Choose a google font and apply it to the paragraph tag</li>
+                                <li>GridSix should have two grid-template-columns</li>
+                                <li>The second column, with the paragraph, should be three times the size of the first column with the icon</li>
+                                <li>Give gridSix a width of 500px and make the background color light gray</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <div class="grid gridSix">
+                                <i class="fa-solid fa-earth-americas"></i>
+                                <p>Hello, Create and then Destroy World</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                
+                <section>
+    
+                </section>
+            </div>
+		</main>
+        <script src="https://kit.fontawesome.com/01ea27422d.js" crossorigin="anonymous"></script>
+	</body>
+</html>
