@@ -1,15 +1,16 @@
+/* CONSTRUIR LA BASE DE DATOS */
 const path = "https://github.com/iturriker/devcamp/blob/main/FullStack/";
 
-const checkpoints = [
-  {name: "Checkpoint_1", href: path + "Checkpoint_1/proposal.html"},
-  {name: "Checkpoint_2", href: path + "Checkpoint_2/proposal.html"},
-  {name: "Checkpoint_3", href: path + "Checkpoint_3/proposal.html"}
+const data = [
+  {name: "Checkpoint_1", number: 1, href: path + "Checkpoint_1/index.html"},
+  {name: "Checkpoint_2", number: 2, href: path + "Checkpoint_2/index.html"},
+  {name: "Checkpoint_3", number: 3, href: path + "Checkpoint_3/index.html"}
 ];
 
-const checkpointList = document.querySelector(".checkpoint-list");
-
+/* CONSTRUIR LA INTERFAZ */
 // Generar la lista de checkpoints dinámicamente
-checkpoints.forEach((checkpoint, index) => {
+const checkpointList = document.querySelector(".checkpoint-list");
+data.forEach((checkpoint, index) => {
 
     const li = document.createElement('li');
 
@@ -22,15 +23,22 @@ checkpoints.forEach((checkpoint, index) => {
     checkpointList.appendChild(li);
 });
 
-const previous = document.querySelector("#previous");
-const next = document.querySelector("#next");
+// Generar botones de navegación dinámicamente
+const back = document.createElement('a');
+back.textContent = 'back';
+back.classList.add('back', 'link');
 
-let checkpointIndex;
-let checkpoint;
+const next = document.createElement('a');
+next.textContent = 'next';
+next.classList.add('next', 'link');
 
+document.querySelector('header').appendChild(back);
+document.querySelector('header').appendChild(next);
+
+/* CONFIGURAR LA INTERACCION */
 // Manejar la entrada del mouse
 function handleCheckpointListEnter(event) {
-    checkpoints.forEach(checkpoint => checkpoint.classList.remove("collapse"));
+    checkpointList.querySelectorAll(".checkpoint").forEach(checkpoint => checkpoint.classList.remove("collapse"));
 }
 
 // Manejar la salida del mouse
@@ -38,48 +46,18 @@ function handleCheckpointListExit(event) {
     displayCheckpoint();
 }
 
-// Manejar el clic en un checkpoint
-function handleCheckpointClick(event) {
-    event.preventDefault();
-    const clickedCheckpointIndex = Array.from(checkpoints).indexOf(event.target);
-
-    if (clickedCheckpointIndex !== -1) {
-        checkpointIndex = clickedCheckpointIndex;
-        displayNavigation();
-        displayCheckpoint();
-    }
+/* CONFIGURAR LA INTERFAZ */
+// Definir el checkpoint actual
+let checkpointIndex;
+for (i=0; i<data.length; i++)
+{
+    if (location.href.includes(data[i].name))
+        {checkpointIndex = i;}
 }
 
-// Manejar el clic en los botones de navegación
-function handleNavigationClick(event) {
-    event.preventDefault();
-
-    if (event.target === next && checkpointIndex < checkpoints.length - 1)
-    {checkpointIndex++;}
-    else if (event.target === previous && checkpointIndex > 0)
-    {checkpointIndex--;}
-    checkpoint = checkpoints[checkpointIndex];
-
-    displayNavigation();
-    displayCheckpoint();
-}
-
-// Mostrar u ocultar los botones
-function displayNavigation() {
-    if (checkpoint == checkpoints[0])
-    {previous.classList.add("collapse");}
-    else
-    {previous.classList.remove("collapse");}
-
-    if (checkpoint == checkpoints[checkpoints.length - 1])
-    {next.classList.add("collapse");}
-    else
-    {next.classList.remove("collapse");}
-}
-
-// Mostrar el checkpoint
+// Mostrar u ocultar los checkpoints
 function displayCheckpoint() {
-    checkpointList.forEach((checkpoint, index) => {
+    checkpointList.querySelectorAll(".checkpoint").forEach((checkpoint, index) => {
         if (index === checkpointIndex)
         {checkpoint.classList.remove("collapse");}
         else
@@ -87,16 +65,26 @@ function displayCheckpoint() {
     });
 }
 
-// Inicializar las cosas
-function initialize() {
-    checkpointList.addEventListener("mouseenter", handleCheckpointListEnter);
-    checkpointList.addEventListener("mouseleave", handleCheckpointListExit);
-    checkpoints.forEach(checkpoint => checkpoint.addEventListener("click", handleCheckpointClick));
+// Definir las rutas de navegación y mostrar u ocultar los botones
+function displayNavigation() {
+    if (data[checkpointIndex] == data[0])
+    {back.classList.add("collapse");}
+    else
+    {
+        back.classList.remove("collapse");
+        back.setAttribute('href', data[checkpointIndex-1].href);
+    }
 
-    previous.addEventListener("click", handleNavigationClick);
-    next.addEventListener("click", handleNavigationClick);
+    if (data[checkpointIndex] == data[data.length - 1])
+    {next.classList.add("collapse");}
+    else
+    {
+        next.classList.remove("collapse");
+        next.setAttribute('href', data[checkpointIndex+1].href);
+    }
 }
 
-initialize();
+checkpointList.addEventListener("mouseenter", handleCheckpointListEnter);
+checkpointList.addEventListener("mouseleave", handleCheckpointListExit);
 displayNavigation();
 displayCheckpoint();

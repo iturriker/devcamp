@@ -156,24 +156,24 @@ a {
     background-color: var(--background-color);
 }
 
-.link[id="previous"] {
+.back {
     border-radius: 0 20px 20px 0;
     top: 50dvh;
     left: 0;
 }
 
-.link[id="next"] {
+.next {
     border-radius: 20px 0 0 20px;
     top: 50dvh;
     right: 0;
 }
 
-.link.collapse[id="previous"] {
+.back.collapse {
     transform: translateX(-100%);
     opacity: 0;
 }
 
-.link.collapse[id="next"] {
+.next.collapse {
     transform: translateX(100%);
     opacity: 0;
 }
