@@ -4,6 +4,12 @@
     initial-value: rgba(0, 203, 121, 1);
 }
 
+@property --blue-1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(0, 77, 221);
+}
+
 @property --grey-1 {
     syntax: "<color>";
     inherits: true;
@@ -75,6 +81,18 @@ ul {
 
 img {
     max-width: 100%;
+}
+
+pre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+code {
+    background-color: var(--grey-1);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 i {

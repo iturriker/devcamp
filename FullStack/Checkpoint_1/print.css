@@ -34,7 +34,7 @@ article:nth-child(1) {
 }
 
 .highlight {
-    color: #1600dd;
+    color: var(--blue-1);
 }
 
 .highlight:after {
