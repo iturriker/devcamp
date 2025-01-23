@@ -23,14 +23,16 @@
 		<main>
             <div class="wrapper-links">
                 <ul>
-                    <li><a href="https://iturriker.github.io/devcamp/FullStack/Checkpoint_1/proposal.html">Proposal</a></li>
-                    <li><a href="https://iturriker.github.io/devcamp/FullStack/Checkpoint_1/quiz.html">Quiz</a></li>
+                    <li><a class="proposal" href="https://iturriker.github.io/devcamp/FullStack/Checkpoint_1/proposal.html">Proposal</a></li>
+                    <li><a class="quiz" href="https://iturriker.github.io/devcamp/FullStack/Checkpoint_1/quiz.html">Quiz</a></li>
                     <li><a href="https://github.com/iturriker/devcamp/tree/main/FullStack/Checkpoint_1" target="_blank">GitHub</a></li>
                 </ul>
                 <ul>
                     <li><a href="https://iturriker.github.io/devcamp/">Return to Projects</a></li>
                 </ul>
             </div>
+
+            <script src="template2.js"></script>
 
             <div class="wrapper">
                 <h1 class="title">Checkpoint 1</h1>
@@ -179,56 +181,41 @@ body {
                         <div class="answer">
                             <h3>Answer</h3>
                             <p>Un mixin es como crear un conjunto de atributos que se puede insertar en las clases.</p>
-                            <p>Así como otras cosas de SCSS ya se pueden hacer en CSS, esto lo han empezado a desarrollar hace relativamente poco y lo veo muy útil porque te permite meter una 'clase' dentro de otra clase. Esto se traduce en un HTML mucho más limpio ya que nos olvidamos de metodologías como <a class = "color-link" href="https://compiledcssinjs.com/docs/atomic-css">Atomic CSS.</a></p>
+                            <p>Así como otras cosas de SCSS ya se pueden hacer en CSS, esto lo han empezado a desarrollar hace relativamente poco y lo veo muy útil porque te permite meter una 'clase' dentro de otra clase. Esto se traduce en un HTML mucho más limpio ya que nos olvidamos de metodologías como <a class="highlight" href="https://compiledcssinjs.com/docs/atomic-css">Atomic CSS.</a></p>
                         </div>
                         <div class="result">
                             <h3>Examples</h3>
                             <pre>
-<code>/*MIXIN*/
+<code>/*INCLUDE && PARAMS*/
 
-@mixin latitude-padding {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+@mixin latitude {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-@mixin links {
-    font-family: Verdana;
+@mixin longitude {
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
-@mixin color-link($color) {
-    @include links;
-    color: $color;
-    transition: color 0.3s ease;
-}
-
-@mixin back-image($width, $height) {
+@mixin wrapper($width, $height) {
+    @include latitude;
+    @include longitude;
     width: $width;
     height: $height;
-    object-fit: cover;
 }</code>
-<code>/*MIXIN*/
+<code>/*CONTENT*/
 
-@mixin flex-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+@mixin link {
+    color: blue;
+    text-decoration: underline;
+    @content;
 }
 
-@mixin links {
-    font-family: Verdana;
-}
-
-@mixin color-link($color) {
-    @include links;
-    color: $color;
-    transition: color 0.3s ease;
-}
-
-@mixin back-image($width, $height) {
-    width: $width;
-    height: $height;
-    object-fit: cover;
+.perma-link {
+    @include link {
+        color: blueviolet;
+    }
 }</code>
                             </pre>
                         </div>
@@ -240,15 +227,29 @@ body {
                             <h3>Statement</h3>
                             <p>¿Qué significa Unidad fraccionaria (fr) con CSS Grid?</p>
                         </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>La unidad fraccionaria trabaja sobre el ancho de un grid y lo usamos para asignar medidas relativas a los elementos incluidos en el grid.</p>
+                            <p>Si la arquitectura de columnas de un grid es de [1fr 1fr 2fr], fracionamos el ancho entre la suma de los fr (en este caso 4) y luego asignamos a cada columna las fracciones que le correspondan.</p>
+                        </div>
                         <div class="result">
                             <h3>Examples</h3>
-                            <div class="grid gridFour">
-                                <div class="d41">
-                                    <p>Hello World</p>
+                            <div class="grids">
+                                <div>
+                                    <span>1fr</span>
+                                    <span>1fr</span>
+                                    <span>2fr</span>
+                                    <span>Hello</span>
+                                    <span>World</span>
+                                    <span>Hello World</span>
                                 </div>
-                                <div id="d42">
-                                    <p>Create World</p>
-                                    <p>Destroy World</p>
+                                <div>
+                                    <span>1fr</span>
+                                    <span>1fr</span>
+                                    <span>2fr</span>
+                                    <span>Hello</span>
+                                    <span>World</span>
+                                    <span>Hello World</span>
                                 </div>
                             </div>
                         </div>

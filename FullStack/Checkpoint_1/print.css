@@ -12,6 +12,7 @@ main, .wrapper {
 }
 
 .wrapper {
+    background: none;
     box-shadow: none;
 }
 
@@ -25,16 +26,17 @@ p:last-child {
 
 article {
     page-break-before: always;
+    background-color: var(--grey-2);
 }
 
 article:nth-child(1) {
     page-break-before: avoid;
 }
 
-.color-link {
+.highlight {
     color: #1600dd;
 }
 
-.color-link:after {
+.highlight:after {
     content: ' (' attr(href) ')';
 }

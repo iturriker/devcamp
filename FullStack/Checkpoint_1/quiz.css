@@ -9,3 +9,34 @@ code {
     border-radius: 8px;
     padding: 10px;
 }
+
+.grids {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grids div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    text-align: center;
+    gap: 5px;
+}
+
+.grids div:nth-child(1) span {
+    border: 1px solid blue;
+}
+
+.grids div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-auto-flow: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 5px;
+}
+
+.grids div:nth-child(2) span {
+    border: 1px solid green;
+}

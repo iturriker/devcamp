@@ -60,7 +60,10 @@ for (i=0; i<data.length; i++)
 function displayCheckpoint() {
     checkpointList.querySelectorAll(".checkpoint").forEach((checkpoint, index) => {
         if (index === checkpointIndex)
-        {checkpoint.classList.remove("collapse");}
+        {
+            checkpoint.classList.remove("collapse");
+            checkpoint.classList.add("highlight");
+        }
         else
         {checkpoint.classList.add("collapse");}
     });
