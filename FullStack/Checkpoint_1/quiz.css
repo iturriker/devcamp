@@ -1,0 +1,11 @@
+pre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+code {
+    background-color: lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+}

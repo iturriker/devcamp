@@ -1,10 +1,11 @@
 /* CONSTRUIR LA BASE DE DATOS */
-const path = "https://github.com/iturriker/devcamp/blob/main/FullStack/";
+const proposalPath = "https://iturriker.github.io/devcamp/FullStack/";
+const packagePath = "https://github.com/iturriker/devcamp/blob/main/FullStack/";
 
 const data = [
-  {name: "Checkpoint_1", number: 1, href: path + "Checkpoint_1/proposal.html"},
-  {name: "Checkpoint_2", number: 2, href: path + "Checkpoint_2/proposal.html"},
-  {name: "Checkpoint_3", number: 3, href: path + "Checkpoint_3/proposal.html"}
+  {name: "Checkpoint_1", number: 1, href: proposalPath + "Checkpoint_1/proposal.html"},
+  {name: "Checkpoint_2", number: 2, href: proposalPath + "Checkpoint_2/proposal.html"},
+  {name: "Checkpoint_3", number: 3, href: proposalPath + "Checkpoint_3/proposal.html"}
 ];
 
 /* CONSTRUIR LA INTERFAZ */
@@ -16,7 +17,7 @@ data.forEach((checkpoint, index) => {
 
     const a = document.createElement('a');
     a.href = checkpoint.href;
-    a.textContent = index + 1;
+    a.textContent = "CP " + (index + 1);
     a.classList.add('checkpoint');
 
     li.appendChild(a);

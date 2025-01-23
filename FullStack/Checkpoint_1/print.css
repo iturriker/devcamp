@@ -1,0 +1,40 @@
+header, .wrapper-links {
+    display: none;
+}
+
+html {
+    background: white;
+    color: black;
+}
+
+main, .wrapper {
+    padding: 0;
+}
+
+.wrapper {
+    box-shadow: none;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+article {
+    page-break-before: always;
+}
+
+article:nth-child(1) {
+    page-break-before: avoid;
+}
+
+.color-link {
+    color: #1600dd;
+}
+
+.color-link:after {
+    content: ' (' attr(href) ')';
+}

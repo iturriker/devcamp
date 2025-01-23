@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="template.css">
+        <link rel="stylesheet" href="quiz.css">
+        <link rel="stylesheet" href="print.css" media="print">
+	</head>
+
+	<body>
+        <header>
+            <nav>
+                <ul class="checkpoint-list"></ul>
+            </nav>
+        </header>
+
+        <script src="template.js"></script>
+
+		<main>
+            <div class="wrapper-links">
+                <ul>
+                    <li><a href="https://iturriker.github.io/devcamp/FullStack/Checkpoint_1/proposal.html">Proposal</a></li>
+                    <li><a href="https://iturriker.github.io/devcamp/FullStack/Checkpoint_1/quiz.html">Quiz</a></li>
+                    <li><a href="https://github.com/iturriker/devcamp/tree/main/FullStack/Checkpoint_1" target="_blank">GitHub</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://iturriker.github.io/devcamp/">Return to Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="wrapper">
+                <h1 class="title">Checkpoint 1</h1>
+                <section>
+                    <article>
+                        <h2 class="subtitle">Question 1</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Cuáles son algunas de las cosas que hacen que SCSS sea diferente de CSS? (coloca ejemplos).</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>SCSS es un preprocesador de CSS que implementa tanto una forma más comoda de escribir en sentido sintáctico, así como funcionalidades ampliadas que no existen en CSS.</p>
+                            <p>Entre ellas, encontramos cosas como @mixin, @function, nesting, bucles for - for each, condicionales...</p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code>/*MIXIN*/
+
+@mixin flex-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@mixin links {
+    font-family: Verdana;
+}
+
+@mixin color-link($color) {
+    @include links;
+    color: $color;
+    transition: color 0.3s ease;
+}
+
+@mixin back-image($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}</code>
+<code>/*INCLUDE && NESTING*/
+
+.first-div {
+    @include flex-section;
+    a {
+        @include color-link(red);
+        &:hover {
+            color: blue;
+        }
+    }
+}
+
+.second-div {
+    @include flex-section;
+    a {
+        @include color-link(blue);
+        &:hover {
+        color: red;
+        }
+    }
+}</code>
+<code>/*FOR && FOREACH*/
+    
+@for $i from 1 through 10 {
+    .lorem-picsum-list li:nth-child(#{$i}) {
+        background-image: url('https://picsum.photos/id/#{$i}/400/300.webp');
+        @include back-image(400px, 300px);
+    }
+}
+
+$cars: 'maserati', 'tesla', 'porsche';
+
+@each $car-name in $cars {
+    .car-#{$car-name} {
+        background-image: url('https://s3.amazonaws.com/bottega-devcamp/scss/cars/#{$car-name}.jpg');
+        @include back-image(400px, 300px);
+    }
+}</code>
+                            </pre>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2 class="subtitle">Question 2</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Qué es una variable SCSS? (porque crees que debes utilizarla pon un ejemplo de una variable, escribe una variable y como se pondría para utilizarla).</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>En SCSS una variable es un espacio que almacena información. Esta información puede ser de tipos como color, int, array...</p>
+                            <p>A día de hoy SCSS y CSS están igualados en cuanto a variables ya que podemos usar --var y @property en CSS.</p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code>/*SCSS*/
+
+$color: red;
+$width: 500px;
+$height: 20dvh;
+$fonts: 'Verdana', 'Montserrat', 'Roboto';
+
+body {
+    color: $color;
+    width: $width;
+    height: $height;
+    font-family: $fonts;
+}</code>
+<code>/*CSS*/
+
+@property --color {
+    syntax: "&ltcolor&gt";
+    inherits: true;
+    initial-value: rgba(0, 128, 0, 0.6);
+}
+
+@property --fonts {
+    syntax: "Verdana | Montserrat | Roboto";
+    inherits: true;
+    initial-value: rgba(0, 128, 0, 0.6);
+}
+
+:root {
+    --width: 500px;
+    --height: 20dvh;
+}
+
+body {
+    color: var(--color);
+    width: var(--width);
+    height: var(--height);
+    font-family: var(--fonts);
+}</code>
+                            </pre>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2 class="subtitle">Question 3</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Qué es un SCSS Mixin? (porque crees que debes utilizarla pon un ejemplo de un mixin, escribiendo cómo se crea y como se pondría para utilizarla).</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>Un mixin es como crear un conjunto de atributos que se puede insertar en las clases.</p>
+                            <p>Así como otras cosas de SCSS ya se pueden hacer en CSS, esto lo han empezado a desarrollar hace relativamente poco y lo veo muy útil porque te permite meter una 'clase' dentro de otra clase. Esto se traduce en un HTML mucho más limpio ya que nos olvidamos de metodologías como <a class = "color-link" href="https://compiledcssinjs.com/docs/atomic-css">Atomic CSS.</a></p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code>/*MIXIN*/
+
+@mixin latitude-padding {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@mixin links {
+    font-family: Verdana;
+}
+
+@mixin color-link($color) {
+    @include links;
+    color: $color;
+    transition: color 0.3s ease;
+}
+
+@mixin back-image($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}</code>
+<code>/*MIXIN*/
+
+@mixin flex-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@mixin links {
+    font-family: Verdana;
+}
+
+@mixin color-link($color) {
+    @include links;
+    color: $color;
+    transition: color 0.3s ease;
+}
+
+@mixin back-image($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}</code>
+                            </pre>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2 class="subtitle">Question 4</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Qué significa Unidad fraccionaria (fr) con CSS Grid?</p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <div class="grid gridFour">
+                                <div class="d41">
+                                    <p>Hello World</p>
+                                </div>
+                                <div id="d42">
+                                    <p>Create World</p>
+                                    <p>Destroy World</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+		</main>
+	</body>
+</html>
