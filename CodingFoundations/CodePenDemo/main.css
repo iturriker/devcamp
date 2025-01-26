@@ -1,12 +1,203 @@
-/* THIS IS THE CSS FOR BODY > MAIN */
+/* RESET */
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+:root {
+    font-family: "Lato";
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* GENERAL */
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+span {
+    transition: color 0.3s ease;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid rgb(155, 154, 154);
+    padding: 10px 30px;
+    gap: 20px;
+}
+
+.header-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header-left {
+    align-items: center;
+}
+
+.header-mid {
+    align-items: flex-start;
+}
+
+.header-right {
+    align-items: flex-end;
+}
+
+.header-logo {
+    cursor: pointer;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2.3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 300px;
+}
+
+.header-extra {
+    display: flex;
+}
+
+.header-extra > span {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0px 10px;
+    color: rgb(227, 227, 5);
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-wrap: nowrap;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 20px;
+}
+
+.header-list > li {
+    font-weight: 900;
+}
+
+.header-only {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 10px;
+    gap: 10px;
+}
+
+.header-only > a {
+    color:rgb(185, 185, 185);
+    font-weight: 600;
+}
+
+.header-only > a:hover {
+    color: rgb(32, 97, 238);
+}
+
+.header-only > svg {
+    cursor: pointer;
+    stroke: rgb(185, 185, 185);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 40px;
+    transition: stroke 0.3s ease;
+}
+
+.header-only > svg:hover {
+    stroke: rgb(32, 97, 238);
+}
+
+.header-link-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 20px;
+}
+
+.header-link-wrapper > a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-wrap: nowrap;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color:rgb(73, 73, 73);
+    transition: background-color 0.3s ease;
+}
+
+.header-link-wrapper > a:hover {
+    background-color: rgb(126, 126, 126);
+}
+
+.header-link-wrapper > a > svg {
+    cursor: pointer;
+    fill: none;
+    stroke: rgb(20, 204, 0);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 30px;
+}
+
+.magnifying-svg {
+    cursor: pointer;
+    stroke: rgb(126, 126, 126);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 55px;
+}
+
+/* MAIN */
 main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
+    height: 100%;
     padding: 40px 80px;
     gap: 100px;
     background: linear-gradient(45deg, #535353 10%, #171717 90%);
@@ -15,19 +206,15 @@ main {
 .container-wrapper {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-around;
     gap: 50px;
 }
 
 .text-wrapper {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: flex-start;
     text-align: left;
-    align-items: flex-start;
     text-wrap: wrap;
     gap: 20px;
 }
@@ -50,29 +237,34 @@ main {
 .image-wrapper {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     text-align: left;
     gap: 5px;
 }
 
-.image-wrapper > p{
+.image-wrapper > p {
     font-weight: 600;
 }
 
-.image-wrapper > img{
-    width: 600px;
+.image-wrapper > img {
+    border-radius: 10px;
 }
 
-.button-wrapper {
+.link-wrapper {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
 }
+.link:hover {
+    color: rgb(166, 238, 32);
+}
 
-.button-wrapper > button {
+.link:hover span {
+    color: rgb(166, 238, 32);
+}
+
+.link-wrapper > a {
     text-wrap: nowrap;
     cursor: pointer;
     font-size: 1.6rem;
@@ -85,18 +277,18 @@ main {
     transition: background-position 0.5s ease;
 }
 
-.green-button {
+.link-wrapper > a:hover {
+    background-position-x: 100%;
+}
+
+.green-link {
     background-image: linear-gradient(90deg, rgb(16, 173, 81) 12.5%, rgb(16, 173, 81) 37.5%, #d9ff00 62.5%, #ffd900 87.5%);
     color: black;
 }
 
-.black-button {
+.black-link {
     background-image: linear-gradient(90deg, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 37.5%, #000734 62.5%, #0047ab 87.5%);
     color: white;
-}
-
-.button-wrapper > button:hover {
-    background-position-x: 100%;
 }
 
 .main-text-indent {
@@ -105,4 +297,38 @@ main {
 
 .main-text-special {
     color: rgb(0, 159, 190);
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    text-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+}
+
+.footer-list > li {
+    font-weight: bold;
+    border-color: rgb(155, 154, 154);
+    border-width: 1px;
+    border-style: solid;
+    width: 25%;
+    min-width: fit-content;
+    padding: 10px;
+}
+
+.footer-list > li > a > span {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.6rem;
 }
