@@ -1,7 +1,7 @@
 /*REUSABLE*/
 .grid {
     display: grid;
-    background-color: rgb(223, 223, 223);
+    background-color: var(--grey-1);
     border-radius: 10px;
     padding: 10px;
 }

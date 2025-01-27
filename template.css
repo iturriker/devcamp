@@ -83,6 +83,10 @@ img {
     max-width: 100%;
 }
 
+iframe {
+    border-radius: 10px;
+}
+
 pre {
     display: flex;
     flex-wrap: wrap;
