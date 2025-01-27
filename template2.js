@@ -1,8 +1,7 @@
 /* CONFIGURAR LA INTERFAZ */
 // Definir el apartado actual
-const proposal = document.querySelector(".proposal");
-const quiz = document.querySelector(".quiz");
-if (location.href.includes("proposal"))
-    {proposal.classList.add("highlight");}
-if (location.href.includes("quiz"))
-    {quiz.classList.add("highlight");}
+const headlands = document.querySelectorAll(".wrapper-links ul li a");
+headlands.forEach(link => {
+    if (location.href === link.href)
+        {link.classList.add("highlight");}
+});

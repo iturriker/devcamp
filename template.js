@@ -1,11 +1,10 @@
 /* CONSTRUIR LA BASE DE DATOS */
-const proposalPath = "https://iturriker.github.io/devcamp/FullStack/";
-const packagePath = "https://github.com/iturriker/devcamp/blob/main/FullStack/";
+const path = "https://iturriker.github.io/devcamp/FullStack/";
+//const packagePath = "https://github.com/iturriker/devcamp/blob/main/FullStack/";
 
 const data = [
-  {name: "Checkpoint_1", number: 1, href: proposalPath + "Checkpoint_1/proposal.html"},
-  {name: "Checkpoint_2", number: 2, href: proposalPath + "Checkpoint_2/proposal.html"},
-  {name: "Checkpoint_3", number: 3, href: proposalPath + "Checkpoint_3/proposal.html"}
+  {name: "Checkpoint_1", number: 1, href: path + "Checkpoint_1/grid.html"},
+  {name: "Checkpoint_2", number: 2, href: path + "Checkpoint_2/flexbox.html"},
 ];
 
 /* CONSTRUIR LA INTERFAZ */

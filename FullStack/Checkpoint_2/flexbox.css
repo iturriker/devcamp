@@ -1,0 +1,83 @@
+/*REUSABLE*/
+.grid {
+    display: grid;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*GRID 1*/
+.gridOne {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*GRID 2*/
+.gridTwo {
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.gridTwo .d21 {
+    background-color: red;
+}
+.gridTwo .d22 {
+    background-color: blue;
+}
+.gridTwo .d23 {
+    background-color: yellow;
+}
+
+/*GRID 3*/
+.gridThree {
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    height: 300px;
+}
+
+.gridThree .d32 {
+    overflow: hidden;
+}
+
+.gridThree .d32 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*GRID 4*/
+.gridFour {
+    grid-template-rows: repeat(2, 1fr);
+    width: 500px;
+    background-color: green;
+}
+
+.gridFour #d42 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*GRID 5*/
+.gridFive {
+    grid-template-rows: repeat(2, 1fr);
+    width: 500px;
+}
+
+.gridFive #d52 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gridFive #d52 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*GRID 6*/
+.gridSix {
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    background-color: lightgrey;
+}
+
+.gridSix p {
+    font-family: "Baloo Paaji 2", serif;
+}
