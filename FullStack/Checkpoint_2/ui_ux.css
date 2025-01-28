@@ -1,27 +1,47 @@
-.result .color-list li:nth-child(1) {
+.color-list li:nth-child(1) {
     color: rgba(30, 41, 59, 1);
 }
 
-.result .color-list li:nth-child(2) {
+.color-list li:nth-child(2) {
     color: rgba(100, 116, 139, 1);
 }
 
-.result .color-list li:nth-child(3) {
+.color-list li:nth-child(3) {
     color: rgba(2, 132, 199, 1);
 }
 
-.result .color-list li:nth-child(4) {
+.color-list li:nth-child(4) {
     color: rgba(51, 65, 85, 1);
 }
 
-.result .color-list li {
+.color-list li {
     width: fit-content;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 1);
 }
 
-.result .color-list {
+.color-list {
     border-radius: 10px;
     background: linear-gradient(to bottom, rgba(75, 108, 193, 0.1), rgba(255, 255, 255, 1) 100%);
     padding: 5px 5px 5px 30px;
+}
+
+.user-list li span:nth-child(1) {
+    color:rgba(0, 132, 255, 1);
+}
+
+.user-list li span:nth-child(2) {
+    color:rgba(0, 221, 0, 1);
+}
+
+.user-list li span:nth-child(3) {
+    color:rgba(255, 123, 0, 1);
+}
+
+.user-list li span:nth-child(4) {
+    color:rgb(136, 127, 0);
+}
+
+.objective-list li span {
+    color:rgb(136, 127, 0);
 }

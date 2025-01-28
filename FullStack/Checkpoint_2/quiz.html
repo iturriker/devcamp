@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="../../template.css">
         <link rel="stylesheet" href="quiz.css">
         <link rel="stylesheet" href="../../print.css" media="print">
+        <link rel="stylesheet" href="../../prism.css">
 	</head>
 
 	<body>
@@ -50,14 +51,23 @@
                         </div>
                         <div class="answer">
                             <h3>Answer</h3>
-                            <p></p>
+                            <pre>
+<code class="language-css">/*JUSTIFY CONTENT*/
+
+.justify {
+    justify-content: flex-start;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}</code>
+                            </pre>
                         </div>
                         <div class="result">
                             <h3>Examples</h3>
-                            <pre>
-<code>/*JUSTIFY CONTENT*/
-</code>
-                            </pre>
+
                         </div>
                     </article>
         
@@ -138,5 +148,13 @@
                 </section>
             </div>
 		</main>
+
+        <footer>
+            <div class="wrapper">
+                <p>Powered by <a class="highlight" target="_blank" href="https://prismjs.com">Prism.js</a> for syntax highlight</p>
+                <p>Font <a class="highlight" target="_blank" href="https://fonts.google.com/specimen/Baloo+Paaji+2">Baloo Paaji 2</a> from Google Fonts</p>
+            </div>
+        </footer>
+        <script src="../../prism.js"></script>
 	</body>
 </html>

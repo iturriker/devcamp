@@ -1,4 +1,6 @@
-header, .wrapper-links {
+header,
+footer,
+.wrapper-links {
     display: none;
 }
 

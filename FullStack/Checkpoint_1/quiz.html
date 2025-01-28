@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="../../template.css">
         <link rel="stylesheet" href="quiz.css">
         <link rel="stylesheet" href="../../print.css" media="print">
+        <link rel="stylesheet" href="../../prism.css">
 	</head>
 
 	<body>
@@ -55,7 +56,7 @@
                         <div class="result">
                             <h3>Examples</h3>
                             <pre>
-<code>/*MIXIN*/
+<code class="language-css">/*MIXIN*/
 
 @mixin flex-section {
     display: flex;
@@ -78,7 +79,7 @@
     height: $height;
     object-fit: cover;
 }</code>
-<code>/*INCLUDE && NESTING*/
+<code class="language-css">/*INCLUDE && NESTING*/
 
 .first-div {
     @include flex-section;
@@ -99,7 +100,7 @@
         }
     }
 }</code>
-<code>/*FOR && FOREACH*/
+<code class="language-css">/*FOR && FOREACH*/
     
 @for $i from 1 through 10 {
     .lorem-picsum-list li:nth-child(#{$i}) {
@@ -134,7 +135,7 @@ $cars: 'maserati', 'tesla', 'porsche';
                         <div class="result">
                             <h3>Examples</h3>
                             <pre>
-<code>/*SCSS*/
+<code class="language-css">/*SCSS*/
 
 $color: red;
 $width: 500px;
@@ -147,7 +148,7 @@ body {
     height: $height;
     font-family: $fonts;
 }</code>
-<code>/*CSS*/
+<code class="language-css">/*CSS*/
 
 @property --color {
     syntax: "&ltcolor&gt";
@@ -190,7 +191,7 @@ body {
                         <div class="result">
                             <h3>Examples</h3>
                             <pre>
-<code>/*INCLUDE && PARAMS*/
+<code class="language-css">/*INCLUDE && PARAMS*/
 
 @mixin latitude {
     padding-left: 40px;
@@ -208,7 +209,7 @@ body {
     width: $width;
     height: $height;
 }</code>
-<code>/*CONTENT*/
+<code class="language-css">/*CONTENT*/
 
 @mixin link {
     color: blue;
@@ -261,5 +262,6 @@ body {
                 </section>
             </div>
 		</main>
+        <script src="../../prism.js"></script>
 	</body>
 </html>

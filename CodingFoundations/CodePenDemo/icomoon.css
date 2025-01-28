@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.ttf?2ssx6i') format('truetype'), url('fonts/icomoon.woff?2ssx6i') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::after, [class*=" icon-"]::after {
+  font-family: 'icomoon' !important;
+}
+
+.icon-magnifying-glass::after {
+  content: "\e901";
+}
+.icon-chevron-down::after {
+  content: "  \e900";
+  vertical-align: middle;
+}
