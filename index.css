@@ -2,12 +2,15 @@ main {
     padding-top: 80px;
 }
 
+.item-nav {
+    width: 100%;
+}
+
 .item-nav ul {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0;
-    list-style: none;
+    padding-left: 0;
 }
 
 .item-nav ul h3 {
@@ -15,10 +18,14 @@ main {
 }
 
 .item-nav ul ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    column-gap: 10px;
     padding-left: 40px;
 }
 
 .item-nav ul ul li {
+    width: fit-content;
     list-style: circle;
 }
 

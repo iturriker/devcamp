@@ -4,6 +4,10 @@ footer,
     display: none;
 }
 
+:root {
+    font-size: 0.9rem;
+}
+
 html {
     background: white;
     color: black;
@@ -16,6 +20,10 @@ main, .wrapper {
 .wrapper {
     background: none;
     box-shadow: none;
+}
+
+pre, code {
+	overflow: hidden;
 }
 
 p {

@@ -47,11 +47,11 @@ html {
 }
 
 main {
-    padding: clamp(50px, 20dvh, 200px) clamp(20px, 15dvw, 200px) 80px clamp(20px, 15dvw, 200px);
+    padding: clamp(50px, 20dvh, 200px) clamp(20px, 15dvw, 200px) 30px clamp(20px, 15dvw, 200px);
 }
 
 footer {
-    padding: clamp(50px, 20dvh, 200px) clamp(20px, 15dvw, 200px) 80px clamp(20px, 15dvw, 200px);
+    padding: 30px clamp(20px, 15dvw, 200px) 80px clamp(20px, 15dvw, 200px);
 }
 
 section {
