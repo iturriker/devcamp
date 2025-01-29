@@ -22,6 +22,12 @@
     initial-value: rgba(250, 250, 250, 1);
 }
 
+@property --radius-1 {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 8px;
+}
+
 /*GENERIC*/
 *, *::before, *::after {
     box-sizing: border-box;
@@ -66,7 +72,7 @@ article {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border-radius: 10px;
+    border-radius: var(--radius-1);
     padding: 10px 20px;
     width: 100%;
 }
@@ -90,7 +96,7 @@ img {
 
 iframe {
     border: none;
-    border-radius: 10px;
+    border-radius: var(--radius-1);
 }
 
 pre {
@@ -101,7 +107,7 @@ pre {
 
 code {
     background-color: var(--grey-1);
-    border-radius: 8px;
+    border-radius: var(--radius-1);
     padding: 10px;
 }
 
@@ -114,21 +120,6 @@ i {
 a {
     color: inherit;
     text-decoration: none;
-}
-
-/*REUSABLE*/
-
-.title {
-    color: var(--green-1);
-    text-transform: uppercase;
-}
-
-.subtitle {
-    text-transform: uppercase;
-}
-
-.highlight {
-    color: var(--green-1);
 }
 
 /*SPECIFIC*/
@@ -172,7 +163,7 @@ a {
     align-items: flex-start;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
     background-color: var(--grey-2);
-    border-radius: 8px;
+    border-radius: var(--radius-1);
     padding: 40px;
     gap: 20px;
 }
@@ -191,6 +182,21 @@ a {
     height: 100%;
 }
 
+/*REUSABLE*/
+.title {
+    color: var(--green-1);
+    text-transform: uppercase;
+}
+
+.subtitle {
+    text-transform: uppercase;
+}
+
+.highlight { /*Added by Javascript*/
+    color: var(--green-1);
+}
+
+/*JAVASCRIPT*/
 .checkpoint {
     display: block;
     font-size: 1.2rem;
@@ -238,13 +244,13 @@ a {
 }
 
 .back {
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 var(--radius-1) var(--radius-1) 0;
     top: 50dvh;
     left: 0;
 }
 
 .next {
-    border-radius: 20px 0 0 20px;
+    border-radius: var(--radius-1) 0 0 var(--radius-1);
     top: 50dvh;
     right: 0;
 }

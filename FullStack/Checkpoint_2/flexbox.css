@@ -13,7 +13,7 @@
 .flex {
     display: flex;
     background-color: var(--grey-1);
-    border-radius: 10px;
+    border-radius: var(--radius-1);
     padding: 10px;
     margin: 0;
 }
