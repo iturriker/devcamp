@@ -7,6 +7,12 @@
 @property --green-2 {
     syntax: "<color>";
     inherits: true;
+    initial-value: rgba(40, 167, 69, 1);
+}
+
+@property --green-3 {
+    syntax: "<color>";
+    inherits: true;
     initial-value: rgba(0, 128, 0, 1);
 }
 
@@ -305,4 +311,15 @@ a {
 .next.collapse {
     transform: translateX(100%);
     opacity: 0;
+}
+
+.links-to-local {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: var(--radius-1);
+    color: white;
+    cursor: pointer;
+    user-select: none;
 }

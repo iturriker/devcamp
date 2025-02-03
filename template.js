@@ -87,6 +87,13 @@ function displayNavigation() {
     }
 }
 
+// Definir el apartado actual
+const headlands = document.querySelectorAll(".wrapper-links ul li a");
+headlands.forEach(link => {
+    if (location.href === link.href)
+        {link.classList.add("expose");}
+});
+
 checkpointList.addEventListener("mouseenter", handleCheckpointListEnter);
 checkpointList.addEventListener("mouseleave", handleCheckpointListExit);
 displayNavigation();
