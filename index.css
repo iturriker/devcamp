@@ -35,7 +35,3 @@ main {
     padding: 5px;
     transition: color 0.3s ease;
 }
-
-.item-nav ul ul li a:hover {
-    color: var(--green-2);
-}

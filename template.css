@@ -90,6 +90,7 @@ html {
     background-position: left bottom;
     background-repeat: no-repeat;
     min-height: 100dvh;
+    transition: background-color 0.3s ease;
 }
 
 main {
@@ -312,6 +313,18 @@ a {
     padding: 5px 10px;
     border-radius: var(--radius-1);
     color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.theme-toggle-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: var(--radius-1);
+    color: white;
+    background-color: var(--blue-2);
     cursor: pointer;
     user-select: none;
 }
