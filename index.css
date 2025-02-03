@@ -37,5 +37,5 @@ main {
 }
 
 .item-nav ul ul li a:hover {
-    color: green;
+    color: var(--green-2);
 }
