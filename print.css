@@ -1,6 +1,7 @@
 header,
 footer,
-.wrapper-links {
+.wrapper-links,
+.links-to-local {
     display: none;
 }
 

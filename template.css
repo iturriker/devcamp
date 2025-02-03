@@ -223,17 +223,9 @@ a {
 }
 
 /*REUSABLE*/
-/*.title {
-    color: var(--green-1);
-    text-transform: uppercase;
-}
-
-.subtitle {
-    text-transform: uppercase;
-}*/
-
 .highlight { /*Added by Javascript*/
     color: var(--blue-2);
+    transition: color 0.3s ease;
 }
 
 .highlight:hover {
