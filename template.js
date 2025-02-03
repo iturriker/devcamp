@@ -61,7 +61,7 @@ function displayCheckpoint() {
         if (index === checkpointIndex)
         {
             checkpoint.classList.remove("collapse");
-            checkpoint.classList.add("highlight");
+            checkpoint.classList.add("expose");
         }
         else
         {checkpoint.classList.add("collapse");}

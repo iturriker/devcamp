@@ -43,10 +43,6 @@ article:nth-child(1) {
     page-break-before: avoid;
 }
 
-.highlight {
-    color: var(--blue-1);
-}
-
-.highlight:after {
+.print-link:after {
     content: ' (' attr(href) ')';
 }

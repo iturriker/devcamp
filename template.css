@@ -13,7 +13,7 @@
 @property --blue-1 {
     syntax: "<color>";
     inherits: true;
-    initial-value: rgba(0, 77, 221, 1);
+    initial-value: rgb(0, 123, 255);
 }
 
 @property --blue-2 {
@@ -66,6 +66,16 @@
 html, body, header, main, footer, section, article, h1, h2, h3, h4, li, i, p, a, pre, code {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    color: var(--green-1);
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--green-1);
+    text-transform: uppercase;
 }
 
 html {
@@ -207,16 +217,24 @@ a {
 }
 
 /*REUSABLE*/
-.title {
+/*.title {
     color: var(--green-1);
     text-transform: uppercase;
 }
 
 .subtitle {
     text-transform: uppercase;
-}
+}*/
 
 .highlight { /*Added by Javascript*/
+    color: var(--blue-2);
+}
+
+.highlight:hover {
+    color: var(--blue-1);
+}
+
+.expose { /*Added by Javascript*/
     color: var(--green-1);
 }
 
