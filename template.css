@@ -69,7 +69,7 @@
     scrollbar-color: lightgrey white;
 }
 
-html, body, header, main, footer, section, article, h1, h2, h3, h4, li, i, p, a, pre, code {
+html, body, header, main, footer, section, article, input, h1, h2, h3, h4, li, i, p, a, pre, code {
     margin: 0;
     padding: 0;
 }
@@ -161,6 +161,7 @@ i {
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /*SPECIFIC*/
@@ -306,25 +307,58 @@ a {
     opacity: 0;
 }
 
-.links-to-local {
+/*CONFIG*/
+.config {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--radius-1) var(--radius-1) 0 var(--radius-1);
+    gap: 10px;
+}
+
+.links-path {
     padding: 5px 10px;
     border-radius: var(--radius-1);
+    text-align: center;
     color: white;
-    cursor: pointer;
     user-select: none;
 }
 
-.theme-toggle-button {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    padding: 5px 10px;
-    border-radius: var(--radius-1);
-    color: white;
-    background-color: var(--blue-2);
-    cursor: pointer;
+.theme-slider {
+    appearance: none;
     user-select: none;
+    cursor: pointer;
+    background-color: var(--blue-2);
+    border-radius: 2rem;
+    height: 2rem;
+}
+
+.theme-slider::-webkit-slider-thumb {
+    appearance: none;
+    background-color: white;
+    border: 2px solid var(--blue-2);
+    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+}
+
+/*MENU*/
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--radius-1) var(--radius-1) var(--radius-1) 0;
+    gap: 10px;
+}
+
+.menu > li {
+    list-style: none;
 }
