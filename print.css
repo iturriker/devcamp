@@ -1,7 +1,8 @@
 header,
 footer,
-.wrapper-links,
-.links-to-local {
+.navigation,
+.menu,
+.headland-wrapper {
     display: none;
 }
 

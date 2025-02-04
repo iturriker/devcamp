@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,22 +17,30 @@
 	</head>
 
 	<body>
-        <header>
-            <nav>
-                <ul class="checkpoint-list"></ul>
-            </nav>
-        </header>
+        <div class="navigation">
+            <div class="navigation-wrapper">
+                <ul class="navigation-list"></ul>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a class="back-control control collapse">back</a>
+            <a class="next-control control collapse">next</a>
+        </div>
+
+        <div class="menu">
+            <div class="menu-wrapper">
+                <ul class="menu-links"></ul>
+                <div class="menu-config">
+                    <input type="range" class="filter-slider" min="0" max="360">
+                    <a class="links-path-changer"></a>
+                </div>
+            </div>
+        </div>
 
 		<main>
-            <div class="wrapper-links">
-                <ul>
-                    <li><a href="https://iturriker.github.io/devcamp/FullStack/Checkpoint_1/grid.html">Grid</a></li>
-                    <li><a href="https://iturriker.github.io/devcamp/FullStack/Checkpoint_1/quiz.html">Quiz</a></li>
-                    <li><a href="https://github.com/iturriker/devcamp/tree/main/FullStack/Checkpoint_1" target="_blank">GitHub</a></li>
-                </ul>
-                <ul>
-                    <li><a href="https://iturriker.github.io/devcamp/">Return to Projects</a></li>
-                </ul>
+            <div class="headland-wrapper">
+                <ul class="headland-list"></ul>
             </div>
 
             <div class="wrapper">
@@ -258,10 +266,8 @@ body {
                 </section>
             </div>
 		</main>
-        
-        <script src="../../template.js" defer></script>
+
         <script src="../../prism.js" defer></script>
-        <script src="../../menu.js" defer></script>
-        <script src="../../config.js" defer></script>
+        <script src="../../template.js" defer></script>
 	</body>
 </html>
