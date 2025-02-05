@@ -19,49 +19,74 @@ const localPath = "http://127.0.0.1:5500/";
 
 /* BASE DE DATOS */
 const structure = {
-    "Checkpoint_1": [
-        { path: path, dir: "FullStack/Checkpoint_1/", file: "grid", type: ".html", desc: "Grid", target: "" },
-        { path: path, dir: "FullStack/Checkpoint_1/", file: "quiz", type: ".html", desc: "Quiz", target: "" },
-        { path: gitPath, dir: "FullStack/Checkpoint_1/", file: "", type: "", desc: "GitHub", target: "_blank" },
-        { path: path, dir: "", file: "", type: "", desc: "Projects", target: "" },
+    "index": [
+        { path: path, dir: "", file: "style-guide", type: ".html", desc: "Style Guide", target: "", rel: ""},
+        { path: gitPath, dir: "", file: "README", type: ".md", desc: "README", target: "_blank", rel: "noopener noreferrer" },
+        { path: gitPath, dir: "", file: "", type: "", desc: "GitHub", target: "_blank", rel: "noopener noreferrer" },
+        { path: "https://iturriker.github.io/portfolio/", dir: "", file: "", type: "", desc: "Iker Karkokli", target: "_blank", rel: "noopener noreferrer" },
     ],
-    "Checkpoint_2": [
-        { path: path, dir: "FullStack/Checkpoint_2/", file: "flexbox", type: ".html", desc: "FlexBox", target: "" },
-        { path: path, dir: "FullStack/Checkpoint_2/", file: "ui_ux", type: ".html", desc: "UI/UX", target: "" },
-        { path: path, dir: "FullStack/Checkpoint_2/", file: "quiz", type: ".html", desc: "Quiz", target: "" },
-        { path: gitPath, dir: "FullStack/Checkpoint_2/", file: "", type: "", desc: "GitHub", target: "_blank" },
-        { path: path, dir: "", file: "", type: "", desc: "Projects", target: "" },
+    "style-guide": [
+        { path: gitPath, dir: "", file: "style-guide", type: ".html", desc: "GitHub", target: "_blank", rel: "noopener noreferrer" },
+        { path: path, dir: "", file: "index", type: ".html", desc: "Projects", target: "", rel: "" },
+    ],
+    "checkpoint-1": [
+        { path: path, dir: "full-stack/checkpoint-1/", file: "grid", type: ".html", desc: "Grid", target: "", rel: "" },
+        { path: path, dir: "full-stack/checkpoint-1/", file: "quiz", type: ".html", desc: "Quiz", target: "", rel: "" },
+        { path: gitPath, dir: "full-stack/checkpoint-1/", file: "", type: "", desc: "GitHub", target: "_blank", rel: "noopener noreferrer" },
+        { path: path, dir: "", file: "index", type: ".html", desc: "Projects", target: "", rel: "" },
+    ],
+    "checkpoint-2": [
+        { path: path, dir: "full-stack/checkpoint-2/", file: "flexbox", type: ".html", desc: "FlexBox", target: "", rel: "" },
+        { path: path, dir: "full-stack/checkpoint-2/", file: "ui-ux", type: ".html", desc: "UI/UX", target: "", rel: "" },
+        { path: path, dir: "full-stack/checkpoint-2/", file: "quiz", type: ".html", desc: "Quiz", target: "", rel: "" },
+        { path: gitPath, dir: "full-stack/checkpoint-2/", file: "", type: "", desc: "GitHub", target: "_blank", rel: "noopener noreferrer" },
+        { path: path, dir: "", file: "index", type: ".html", desc: "Projects", target: "", rel: "" },
     ]
 };
 
+/* OBTENER INFORMACION DE LAS CLAVES */
+const keys = Object.keys(structure); // Lista de todas las claves
+const keysToIgnore = ["index", "style-guide"]; // Claves a ignorar
+let currentKey;
+if (window.location.href === path || window.location.href === localPath) {
+    currentKey = "index"; // Si estamos en la página principal, asignamos "index"
+}
+else {
+    currentKey = keys.find(key => window.location.pathname.includes(key)); // Buscamos la clave actual en la URL
+}
+
 /* OBTENER INFORMACION DE LOS CHECKPOINTS */
-const checkpoints = Object.keys(structure); //Lista de checkpoints
-const checkpointKey = checkpoints.find(checkpoint => window.location.pathname.includes(checkpoint)); //Checkpoint actual
-const checkpointKeyIndex = checkpoints.indexOf(checkpointKey); //Indice del checkpoint actual
+const checkpoints = keys.filter(key => !keysToIgnore.includes(key)); // Lista de checkpoints sin las claves a ignorar
+const checkpointKeyIndex = checkpoints?.indexOf(currentKey); // Indice del checkpoint actual
+
+
+
 
 /* CONSTRUIR LOS LINKS DE HEADLAND Y MENU*/
-if (checkpointKey && menuLinks && headlandList) {
-    structure[checkpointKey].forEach(link => {
+if (currentKey && menuLinks) {
+    structure[currentKey].forEach(link => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = link.path + link.dir + link.file + link.type;
         a.target = link.target;
+        a.rel = link.rel;
         a.textContent = link.desc;
         li.appendChild(a);
 
         menuLinks.appendChild(li); // Agregar el <li> al menuLinks
-        headlandList.appendChild(li.cloneNode(true)); // Clonar el <li> y agregarlo al headlandList
+        headlandList?.appendChild(li.cloneNode(true)); // Clonar el <li> y agregarlo al headlandList
     });
 }
 
 /* CONSTRUIR LA INTERFAZ DEL MENU DE NAVEGACION*/
 if(navigationList) {
     checkpoints.forEach(key => {
-
         const li = document.createElement('li');
         const a = document.createElement('a');
     
         a.href = structure[key][0].path + structure[key][0].dir + structure[key][0].file + structure[key][0].type;
+        a.target = structure[key][0].target;
+        a.rel = structure[key][0].rel;
         a.textContent = structure[key][0].desc;
     
         li.appendChild(a);
@@ -124,6 +149,17 @@ if (location.origin === "http://127.0.0.1:5500" && linksPathChanger) {
             ? rootStyle.getPropertyValue("--green-2")
             : rootStyle.getPropertyValue("--blue-2");
     }
+
+    // Configurar el MutationObserver para detectar cambios en el DOM y actualizar los enlaces
+    const observer = new MutationObserver(() => {
+        toggleLinksPath();
+    });
+
+    // Configuración del observer para observar cambios en el DOM de toda la página
+    observer.observe(document.body, {
+        childList: true,        // Observar adiciones y eliminaciones de nodos
+        subtree: true           // Observar todo el árbol de elementos hijos
+    });
 
     toggleLinksPath();
     updateLinksPath();

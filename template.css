@@ -67,6 +67,8 @@
     font-family: "Baloo Paaji 2", serif;
     font-size: 1.1rem;
     scrollbar-color: lightgrey white;
+    scroll-behavior: smooth;
+    scroll-padding-top: clamp(50px, 10dvh, 200px);
 }
 
 html, body, header, main, footer, section, article, input, h1, h2, h3, h4, li, i, p, a, pre, code {
@@ -94,7 +96,7 @@ html {
 }
 
 main {
-    padding: clamp(50px, 20dvh, 200px) clamp(20px, 15dvw, 200px) 30px clamp(20px, 15dvw, 200px);
+    padding: clamp(50px, 20dvh, 200px) clamp(20px, 15dvw, 200px) 80px clamp(20px, 15dvw, 200px);
 }
 
 footer {
@@ -331,7 +333,7 @@ a {
 .menu-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 30px;
     background-color: white;
     opacity: 1;
     border-radius: var(--radius-1) var(--radius-1) 0 0;
@@ -371,7 +373,7 @@ a {
     gap: 10px;
 }
 
-.filter-slider {
+[class*="slider"] {
     appearance: none;
     user-select: none;
     cursor: pointer;
@@ -380,7 +382,7 @@ a {
     height: 2rem;
 }
 
-.filter-slider::-webkit-slider-thumb {
+[class*="slider"]::-webkit-slider-thumb {
     appearance: none;
     background-color: white;
     border: 3px solid var(--blue-2);

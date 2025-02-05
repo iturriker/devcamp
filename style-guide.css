@@ -6,8 +6,6 @@ header {
 
 .header-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     padding: 10px;
     background-color: white;
@@ -16,10 +14,6 @@ header {
 
 .header-wrapper > nav {
     width: 100%;
-}
-
-.header-wrapper > a {
-    min-width: fit-content;
 }
 
 .guide-list {
@@ -33,6 +27,8 @@ header {
 .guide-list > li  {
     display: flex;
     flex: 1 1 fit-content;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
