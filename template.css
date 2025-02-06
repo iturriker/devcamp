@@ -58,6 +58,12 @@
     initial-value: 8px;
 }
 
+@property --layer-1 {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 1;
+}
+
 /*GENERIC*/
 *, *::before, *::after {
     box-sizing: border-box;
@@ -235,6 +241,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: var(--layer-1);
 }
 
 .navigation-wrapper {
@@ -279,6 +286,10 @@ a {
     color: var(--green-1);
 }
 
+.controls {
+    z-index: var(--layer-1);
+}
+
 .control {
     display: block;
     position: fixed;
@@ -289,7 +300,6 @@ a {
     padding: 10px 20px;
     background-color: white;
     opacity: 1;
-    z-index: 100;
     transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
 }
 
@@ -328,6 +338,7 @@ a {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: var(--layer-1);
 }
 
 .menu-wrapper {
