@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Devcamp Projects | Checkpoint 3 | Quiz</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../template.css">
+        <link rel="stylesheet" href="../../print.css" media="print">
+        <link rel="stylesheet" href="../../prism.css">
+	</head>
+
+	<body>
+        <div class="navigation">
+            <div class="navigation-wrapper">
+                <ul class="navigation-list"></ul>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a class="back-control control collapse">back</a>
+            <a class="next-control control collapse">next</a>
+        </div>
+
+        <div class="menu">
+            <div class="menu-wrapper">
+                <ul class="menu-links"></ul>
+                <div class="menu-config">
+                    <input type="range" class="filter-slider" min="0" max="360">
+                    <a class="links-path-changer"></a>
+                </div>
+            </div>
+        </div>
+
+		<main>
+            <div class="headland-wrapper">
+                <ul class="headland-list"></ul>
+            </div>
+
+            <div class="wrapper">
+                <h1>Checkpoint 3</h1>
+                <section>
+                    <article>
+                        <h2>Question 1</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Cuáles son los tipos de datos en Python?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <ul>
+                                <li>Booleans (bool): Representan valores de verdad (True, False).</li>
+                                <li>Numbers (int, float, complex): Números enteros, flotantes y complejos.</li>
+                                <li>Strings (str): Cadenas de texto.</li>
+                                <li>Bytes (bytes): Secuencias de bytes.</li>
+                                <li>None (NoneType): Representa la ausencia de un valor.</li>
+                                <li>Lists (list): Colección ordenada y mutable de elementos.</li>
+                                <li>Tuples (tuple): Colección ordenada e inmutable de elementos.</li>
+                                <li>Sets (set): Conjunto no ordenado de elementos únicos.</li>
+                                <li>Dictionaries (dict): Colección no ordenada de pares clave-valor.</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">myBool = True
+myInt = 5
+myFloat = 5.5
+myString = "hello"
+myByte = b"hello"
+myNone = None
+myList = [1,2,3,4,5]
+myTuple = (1,2,3,4,5)
+mySet = {1,2,3,4,5}
+myDictionary = {"name": "Python", "type": "language"}
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 2</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Qué tipo de convención de nomenclatura deberíamos utilizar para las variables en Python?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>Python sigue la convención de snake_case para los nombres de variables y funciones, y CamelCase para los nombres de clases. Dependiendo del ámbito (global, local) y estado (público, privado) en el que se encuentran estos elementos, la nomenclatura también puede variar.</p>
+                            <p>Estas son las reglas a la hora de nombrar variables:</p>
+                            <ul>
+                                <li>Los nombres deben comenzar con una letra o un guion bajo (_)</li>
+                                <li>Se usa guion bajo (_) para separar palabras</li>
+                                <li>No deben comenzar con números ni usar caracteres especiales</li>
+                            </ul> 
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">variable = "language"
+another_variable = "Python"
+_private_variable = "C#"
+1variable = "Error"  # No puede comenzar con un número
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 3</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Qué es un Heredoc en Python?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>Un heredoc es en definitiva una cadena de texto multilinea. El concepto Heredoc se usa en muchos lenguajes de programación y la idea es la utilización de varias lineas de texto.</p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">lorem = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Curabitur ullamcorper quam a ex efficitur, non faucibus leo luctus.
+    
+Pellentesque bibendum vitae ipsum vitae aliquam.
+"""
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 4</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Qué es una interpolación de cadenas?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>La interpolación de cadenas es la forma de insertar valores dentro de un string. La principal ventaja es que permite usar variables dentro de la cadena de texto.</p>
+                            <p>Se puede hacer de varias formas:</p>
+                            <ul>
+                                <li>f-strings</li>
+                                <li>format()</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">name = "Iker"
+nickname = "Karko"
+
+# f-string
+print(f"Mi nombre es {name} pero me suelen llamar {nickname}.")
+
+# format()
+print("Mi nombre es {1} pero me suelen llamar {2}.".format(name, nickname))
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 5</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Cuándo deberíamos usar comentarios en Python?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>Los comentarios se usan para documentar el código y explicar su funcionamiento. A pesar de que son muy útiles, lo principal es siempre poner nombres que sean identificativos a las clases, funciones y variables, de tal forma que se expliquen por si mismas.</p>
+                            <p>Algunos usos útiles de los comentarios:</p>
+                            <ul>
+                                <li>Describir en profundidad funciones y clases</li>
+                                <li>Marcar TODOs o FIXMEs.</li>
+                                <li>Deshabilitar temporalmente partes del código</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python"># Comentario explicativo general de la función
+
+def suma(a, b):
+    """Tareas especificas de la función."""
+    sum = a + b # Suma las variables
+    return sum # Devuelve el valor
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 6</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Cuáles son las diferencias entre aplicaciones monolíticas y de microservicios?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>Aplicaciones monolíticas: Toda la aplicación está en un solo bloque de código. Esto hace que sean más fáciles de desarrollar, pero menos escalables. Recomendado para aplicaciones pequeñas y que no requieran de un cambio constante en el código.</p>
+                            <p>Aplicaciones microservicios: La aplicación está dividida en múltiples servicios independientes. Permite una mayor escalabilidad y es más flexible. Más usado en aplicaciones grandes, en las que es recomendable mantener los servicios por separado para que si algo va mal no afecte a toda la app.</p>   
+                        </div>
+                    </article>
+                </section>
+            </div>
+		</main>
+
+        <script src="../../prism.js" defer></script>
+        <script src="../../template.js" defer></script>
+	</body>
+</html>

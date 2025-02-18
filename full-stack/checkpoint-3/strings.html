@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Devcamp Projects | Checkpoint 3 | Strings</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../template.css">
+        <link rel="stylesheet" href="../../print.css" media="print">
+        <link rel="stylesheet" href="../../prism.css">
+	</head>
+
+    <body>
+        <div class="navigation">
+            <div class="navigation-wrapper">
+                <ul class="navigation-list"></ul>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a class="back-control control collapse">back</a>
+            <a class="next-control control collapse">next</a>
+        </div>
+
+        <div class="menu">
+            <div class="menu-wrapper">
+                <ul class="menu-links"></ul>
+                <div class="menu-config">
+                    <input type="range" class="filter-slider" min="0" max="360">
+                    <a class="links-path-changer"></a>
+                </div>
+            </div>
+        </div>
+
+		<main>
+            <div class="headland-wrapper">
+                <ul class="headland-list"></ul>
+            </div>
+
+            <div class="wrapper">
+                <h1>Checkpoint 3</h1>
+                <section>
+                    <article>
+                        <h2>Strings 1</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Create a string, number, list, and boolean, each stored in their own variable</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">myString = "hey my friend"
+myNumber = 5
+myList = [1,2,3,4,5]
+myBool = True</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 2</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Use an index to grab the first 3 letters in your string, store that in a variable</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre><code class="language-python">hey = myString[:3]</code></pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 3</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Use an index to grab the first element from your list</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre><code class="language-python">one = myList[0]</code></pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 4</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Create a new number variable that adds 10 to your original number</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre><code class="language-python">y = myNumber + 10</code></pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 5</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Use an index to get the last element in your list</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre><code class="language-python">five = myList[-1:]</code></pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 6</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Use split to transform the following string into a list</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">names = "harry,alex,susie,jared,gail,conner"
+namesList = names.split(",")
+type(namesList)</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 7</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <ul>
+                                <li>Get the first word from your string using indexes</li>
+                                <li>Use the upper function to transform the letters into uppercase</li>
+                                <li>Create a new string that takes the uppercase word and the rest of the original string</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre><code class="language-python">HEY = myString[:3].upper() + myString[3:]</code></pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 8</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Use string interpolation to print out a sentence that contains your number variable</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre><code class="language-python">sentence = f"{hey}! give me {myNumber}"</code></pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 9</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Print “hello world”</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre><code class="language-python">print("hello world")</code></pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Strings 10</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <ul>
+                                <li>Create a string that contains the word "Hola"</li>
+                                <li>Using the keyword in the search method or the index, find and select "Hola" in your string</li>
+                                <li>Then, using the replace function, replace "Hola" in your string with "Adiós"</li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python"># Reference to Metal Gear Rising: Revengeance -> "Adiós Amigos"
+salutation = "Hola amigos"
+if "Hola" in salutation:
+    salutation = salutation.replace("Hola", "Adiós")</code>
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+            </div>
+		</main>
+
+        <script src="../../prism.js" defer></script>
+        <script src="../../template.js" defer></script>
+	</body>
+</html>

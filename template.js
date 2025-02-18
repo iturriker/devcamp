@@ -41,7 +41,13 @@ const structure = {
         { path: path, dir: "full-stack/checkpoint-2/", file: "quiz", type: ".html", desc: "Quiz", target: "", rel: "" },
         { path: gitPath, dir: "full-stack/checkpoint-2/", file: "", type: "", desc: "GitHub", target: "_blank", rel: "noopener noreferrer" },
         { path: path, dir: "", file: "index", type: ".html", desc: "Projects", target: "", rel: "" },
-    ]
+    ],
+    "checkpoint-3": [
+        { path: path, dir: "full-stack/checkpoint-3/", file: "strings", type: ".html", desc: "Strings", target: "", rel: "" },
+        { path: path, dir: "full-stack/checkpoint-3/", file: "quiz", type: ".html", desc: "Quiz", target: "", rel: "" },
+        { path: gitPath, dir: "full-stack/checkpoint-3/", file: "", type: "", desc: "GitHub", target: "_blank", rel: "noopener noreferrer" },
+        { path: path, dir: "", file: "index", type: ".html", desc: "Projects", target: "", rel: "" },
+    ],
 };
 
 /* OBTENER INFORMACION DE LAS CLAVES */
