@@ -157,7 +157,7 @@ pre {
 code {
     background-color: var(--grey-1);
     border-radius: var(--radius-1);
-    padding: 10px;
+    padding: 2px 5px;
 }
 
 i {
@@ -234,6 +234,21 @@ a {
 
 .expose { /*Added by Javascript*/
     color: var(--green-1);
+}
+
+.colorful {
+    background: linear-gradient(45deg, #0233d1 12.5%, #00d0d7 37.5%, #00ff4c 62.5%, #d9ff00 87.5%);
+    background-clip: text;
+    background-size: 200%;
+    background-position-x: 0%;
+    background-repeat: repeat;
+    text-align: center;
+    color: transparent;
+    transition: background-position 0.5s ease, font-size 0.5s ease;
+}
+
+.colorful:hover {
+    background-position-x: 100%;
 }
 
 /*JAVASCRIPT*/
