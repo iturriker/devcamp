@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Devcamp Projects | Checkpoint 4 | Collections</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../template.css">
+        <link rel="stylesheet" href="../../print.css" media="print">
+        <link rel="stylesheet" href="../../prism.css">
+	</head>
+
+    <body>
+        <div class="navigation">
+            <div class="navigation-wrapper">
+                <ul class="navigation-list"></ul>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a class="back-control control collapse">back</a>
+            <a class="next-control control collapse">next</a>
+        </div>
+
+        <div class="menu">
+            <div class="menu-wrapper">
+                <ul class="menu-links"></ul>
+                <div class="menu-config">
+                    <input type="range" class="filter-slider" min="0" max="360">
+                    <a class="links-path-changer"></a>
+                </div>
+            </div>
+        </div>
+
+		<main>
+            <div class="headland-wrapper">
+                <ul class="headland-list"></ul>
+            </div>
+
+            <div class="wrapper">
+                <h1>Checkpoint 4</h1>
+                <section>
+                    <article>
+                        <h2>Collections 1</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Create a list, tuple, float, integer, decimal, and dictionary</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">myList = ["yellow", "red", "green"]
+myTuple = (10, 20, 30)
+myFloat = 0.99
+myInteger = 1
+myDecimal = Decimal("0.123456789")
+myDict = {"r": 100, "g": 50, "b": 150}
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Collections 2</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Round your float up</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">roundFloat = math.ceil(myFloat)
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Collections 3</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Get the square root of your float</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">sqrtFloat = math.sqrt(myFloat)
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Collections 4</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Select the first element from your dictionary</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">firstDictElement = list(myDict.items())[0]
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Collections 5</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Select the second element from your tuple</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">secondTupleElement = myTuple[1]
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Collections 6</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Add an element to the end of your list</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">myList.append("grey")
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Collections 7</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Replace the first element in your list</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">myList[0] = "blue"
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Collections 8</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Sort your list alphabetically</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python">myList.sort()
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Collections 9</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>Use reassignment to add an element to your tuple</p>
+                        </div>
+                        <div class="result">
+                            <h3>Result</h3>
+                            <pre>
+<code class="language-python"># Tuples are immutable, so we create a new tuple and assign it to the same variable
+myTuple += (40,)
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+            </div>
+		</main>
+
+        <script src="../../prism.js" defer></script>
+        <script src="../../template.js" defer></script>
+	</body>
+</html>

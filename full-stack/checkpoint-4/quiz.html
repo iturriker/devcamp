@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Devcamp Projects | Checkpoint 4 | Quiz</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../template.css">
+        <link rel="stylesheet" href="../../print.css" media="print">
+        <link rel="stylesheet" href="../../prism.css">
+	</head>
+
+	<body>
+        <div class="navigation">
+            <div class="navigation-wrapper">
+                <ul class="navigation-list"></ul>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a class="back-control control collapse">back</a>
+            <a class="next-control control collapse">next</a>
+        </div>
+
+        <div class="menu">
+            <div class="menu-wrapper">
+                <ul class="menu-links"></ul>
+                <div class="menu-config">
+                    <input type="range" class="filter-slider" min="0" max="360">
+                    <a class="links-path-changer"></a>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="headland-wrapper">
+                <ul class="headland-list"></ul>
+            </div>
+        
+            <div class="wrapper">
+                <h1>Checkpoint 4</h1>
+                <section>
+                    <article>
+                        <h2>Question 1</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Cuál es la diferencia entre una lista y una tupla en Python?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>Las listas son mutables mientras que las tuplas son inmutables. Esto se traduce en que las listas pueden cambiar después de haberse creado, en cambio, las tuplas, una vez creadas, no se  pueden modificar.</p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">
+lista = [1, 2, 3]
+lista[0] = 4
+
+tupla = (1, 2, 3)
+tupla[0] = 4  # Error
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 2</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Cuál es el orden de las operaciones?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>El orden de las operaciones en Python sigue la jerarquía PEMDAS: Paréntesis, Exponentes, Multiplicación/División, Adición/Sustracción.</p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">
+x = 3 + 2 * (8 / 4) ** 2
+print(x)  # 11.0
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 3</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Qué es un diccionario Python?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>Un diccionario en Python es una colección de elementos, donde cada uno tiene una llave key y un valor value, lo que se conoce como estructura clave-valor. Por ejemplo, un JSON usa esta estructura. Principales ventajas de los diccionarios:</p>
+                            <ul>
+                                <li>
+                                    Son dinámicos, pueden crecer o decrecer, se pueden añadir o eliminar elementos.
+                                </li>
+                                <li>
+                                    Son indexados, los elementos del diccionario son accesibles a través del key.
+                                </li>
+                                <li>
+                                    Son anidados, un diccionario puede contener a otro diccionario en su campo val
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">
+persona = {
+    "nombre": "Iker",
+    "edad": 28,
+    "datos": {
+        "color de ojos": "azul",
+        "altura": 1.75
+    }
+}
+print(persona["nombre"])  # Iker
+print(persona["datos"]["color de ojos"])  # azul
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 4</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Cuál es la diferencia entre el método ordenado y la función de ordenación?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>El método <code>sort()</code> modifica la lista original, mientras que la función <code>sorted()</code> devuelve una nueva lista ordenada sin modificar la original.</p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">
+lista = [3, 1, 4, 1, 5]
+ordenada = sorted(lista)
+print(ordenada)  # [1, 1, 3, 4, 5]
+print(lista)  # [3, 1, 4, 1, 5]
+
+lista.sort()
+print(lista)  # [1, 1, 3, 4, 5]
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Question 5</h2>
+                        <div class="statement">
+                            <h3>Statement</h3>
+                            <p>¿Qué es un operador de reasignación?</p>
+                        </div>
+                        <div class="answer">
+                            <h3>Answer</h3>
+                            <p>Un operador de reasignación permite modificar el valor de una variable usando su valor actual, como <code>+=</code>, <code>-=</code>, <code>*=</code>, entre otros.</p>
+                        </div>
+                        <div class="result">
+                            <h3>Examples</h3>
+                            <pre>
+<code class="language-python">
+x = 10
+x += 5
+x -= 3
+x *= 2
+print(x)  # 24
+</code>
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>        
+
+        <script src="../../prism.js" defer></script>
+        <script src="../../template.js" defer></script>
+	</body>
+</html>

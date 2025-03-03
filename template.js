@@ -48,6 +48,12 @@ const structure = {
         { path: gitPath, dir: "full-stack/checkpoint-3/", file: "", type: "", desc: "GitHub", target: "_blank", rel: "noopener noreferrer" },
         { path: path, dir: "", file: "index", type: ".html", desc: "Projects", target: "", rel: "" },
     ],
+    "checkpoint-4": [
+        { path: path, dir: "full-stack/checkpoint-4/", file: "collections", type: ".html", desc: "Collections", target: "", rel: "" },
+        { path: path, dir: "full-stack/checkpoint-4/", file: "quiz", type: ".html", desc: "Quiz", target: "", rel: "" },
+        { path: gitPath, dir: "full-stack/checkpoint-4/", file: "", type: "", desc: "GitHub", target: "_blank", rel: "noopener noreferrer" },
+        { path: path, dir: "", file: "index", type: ".html", desc: "Projects", target: "", rel: "" },
+    ],
 };
 
 /* OBTENER INFORMACION DE LAS CLAVES */
