@@ -25,7 +25,7 @@ else:
 
 #### Ejemplos
 
-Imagina que hoy te has levantado con muchas ganas de comer frutas y que tus frutas favoritas son las **manzanas 🍏**, las **fresas 🍓** y los **melocotones 🍑**, cada una de diferentes temporadas.
+> Imagina que hoy te has levantado con muchas ganas de comer frutas y que tus frutas favoritas son las **manzanas 🍏**, las **fresas 🍓** y los **melocotones 🍑**, cada una de diferentes temporadas.
 
 <details>
 <summary>
@@ -149,8 +149,10 @@ Esta vez te has levantado con ganas de preparar una pizza, y tus pizzas favorita
 | Queso 🧀 | ✔️ | ✔️ |
 | Aceitunas 🫒 | ❌ | ✔️ |
 
-
-📌 Ejemplo: Queremos una margarita
+<details>
+<summary>
+📌 Ejemplo 1: Queremos una margarita
+</summary>
 
 - Tenemos 🍅 y 🧀, **podemos preparar la margarita**
 
@@ -162,9 +164,14 @@ if hay_tomate and hay_queso:
     preparo_margarita = True
 ```
 
-2. Queremos una pizza simple
+</details>
 
-Por desgracia la nevera está casi vacia y **solo queda 🍅**, así que nuestra pizza será una pizza simple
+<details>
+<summary>
+📌 Ejemplo 2: Queremos una pizza simple
+</summary>
+
+- Por desgracia la nevera está casi vacia y **solo queda 🍅**, así que nuestra pizza será una pizza simple
 
 ```python
 hay_tomate = True
@@ -174,9 +181,14 @@ if hay_tomate or hay_queso:
     preparo_pizza_simple = True
 ```
 
-3. Queremos una napolitana
+</details>
 
-Tenemos 🍅, 🧀 y 🫒 por lo que **podemos preparar la napolitana** y **también la margarita**
+<details>
+<summary>
+📌 Ejemplo 3: Queremos una napolitana
+</summary>
+
+- Tenemos 🍅, 🧀 y 🫒 por lo que **podemos preparar la napolitana** y **también la margarita**
 
 ```python
 hay_tomate = True
@@ -188,10 +200,14 @@ if hay_tomate and hay_queso and hay_aceitunas:
     preparo_margarita = True
 ```
 
-4. Queremos solo 1 pizza
+</details>
 
-Te habrás dado cuenta de que **2 pizzas son demasiado**, solo queremos preparar una. ¿Como lo planteamos?
-Los ingredientes son los de antes 🍅, 🧀 y 🫒
+<details>
+<summary>
+📌 Ejemplo 4: Queremos solo 1 pizza
+</summary>
+
+- Te habrás dado cuenta de que **2 pizzas son demasiado**, solo queremos preparar una. ¿Como lo planteamos? Los ingredientes son los de antes 🍅, 🧀 y 🫒
 
 ```python
 hay_tomate = True
@@ -205,10 +221,14 @@ if hay_tomate and hay_queso:
         preparo_napolitana = True
 ```
 
+</details>
+
 > [!TIP]
 > La anidación de condiciones es fundamental en cualquier proceso lógico.
 
 ### Condicional match-case
+
+#### Sintaxis
 
 ```python
 match variable:
@@ -220,7 +240,14 @@ match variable:
         # Código a ejecutar si no coincide con ningún caso
 ```
 
+#### Ejemplos
+
 Volvamos a hablar de las temporadas pero esta vez desde un enfoque distinto: **🌸 primavera**, **☀️ verano**, **🍁 otoño**, **❄️ invierno**
+
+<details>
+<summary>
+📌 Ejemplo 1: Fruta por temporada
+</summary>
 
 ```python
 temporada = "Invierno"
@@ -237,6 +264,8 @@ match temporada:
     case _:
         calendario_se_ha_roto = True
 ```
+
+<details>
 
 > [!TIP]
 > Este condicional es muy útil para mantener un orden cuando el **conjunto de alternativas es grande**, aunque como todo, depende del contexto
