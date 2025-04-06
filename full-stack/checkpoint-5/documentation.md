@@ -21,9 +21,11 @@ else:
     # Código a ejecutar si ninguna de las condiciones anteriores es verdadera
 ```
 
-#### Ejemplos
+#### Contexto
 
 > Imagina que hoy te has levantado con muchas ganas de comer frutas y que tus frutas favoritas son las **manzanas 🍏**, las **fresas 🍓** y los **melocotones 🍑**, cada una de diferentes temporadas.
+
+#### Ejemplos
 
 <details>
 <summary>
@@ -139,9 +141,11 @@ not condicion
     # Código a ejecutar cuando no se cumple la condición
 ```
 
-#### Ejemplos
+#### Contexto
 
 > Esta vez te has levantado con ganas de preparar una pizza, y tus pizzas favoritas son la **margarita** y la **napolitana**. La margarita lleva **tomate 🍅** y **queso 🧀** y la napolitana lleva **tomate 🍅**, **queso 🧀** y **aceitunas 🫒**.
+
+#### Ejemplos
 
 > | Ingrediente | Margarita 🍕 | Napolitana 🍕 |
 > |-------------|--------------|---------------|
@@ -242,9 +246,11 @@ match variable:
         # Código a ejecutar si no coincide con ningún caso
 ```
 
-#### Ejemplos
+#### Contexto
 
 > Te has planteado cambiar el enfoque, y en vez de ir al super a buscar la fruta, primero compruebas la temporada actual para así comprar la fruta en función de ello: **🌸 primavera**, **☀️ verano**, **🍁 otoño**, **❄️ invierno**
+
+#### Ejemplos
 
 <details>
 <summary>
@@ -289,9 +295,11 @@ while condicion:
     # Código a ejecutar mientras la condición sea verdadera
 ```
 
-#### Ejemplos
+#### Contexto
 
 > Últimamente te has **aficionado especialmente a las manzanas 🍏**. Desconoces el motivo, solo sabes que te encantan.
+
+#### Ejemplos
 
 <details>
 <summary>
@@ -333,6 +341,8 @@ while es_otoño and mis_manzanas < máximo_de_manzanas:
 > [!TIP]
 > El while es un operador de **bucle delicado**, es importante definir bien cuando empieza y cuando acaba ya que sino **puede entrar en un bucle infinito**
 
+---
+
 ### Bucle for
 
 #### Sintaxis
@@ -342,9 +352,11 @@ for elemento in iterable:
     # Código a ejecutar para cada elemento en el iterable
 ```
 
-#### Ejemplos
+#### Contexto
 
 > Al ver tantas manzanas 🍏 en el cajón de manzanas 🍏 **tu madre se ha empezado a hacer preguntas**, y te has metido en un lio!
+
+#### Ejemplos
 
 <details>
 <summary>
@@ -368,7 +380,7 @@ print(f"Manzanas para tirar: {manzanas_para_tirar}")
 
 <details>
 <summary>
-📌 Ejemplo 1: Fruta de temporada
+📌 Ejemplo 2: Fruta de temporada
 </summary>
 
 - ¿Te encanta la fruta pero nunca sabes de que temporada es cada fruta? ¿Quieres un **sistema para identificarlas**? Prueba con esto
@@ -425,6 +437,10 @@ Las **listas por comprensión** permiten crear listas de manera concisa y eficie
 nueva_lista = [expresion for item in iterable if condicion]
 ```
 
+#### Contexto
+
+
+
 #### Ejemplos
 
 <details>
@@ -466,6 +482,8 @@ def mi_funcion(**kwargs):
     for clave, valor in kwargs.items():
         # Código que usa los argumentos
 ```
+
+#### Contexto
 
 #### Ejemplos
 
