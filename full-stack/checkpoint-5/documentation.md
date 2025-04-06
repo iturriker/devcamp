@@ -43,6 +43,8 @@ if hay_manzanas:
     compro_manzanas = True
 ```
 
+</details>
+
 <details>
 <summary>
 📌 Ejemplo 2: Estamos en Primavera
@@ -63,7 +65,12 @@ elif hay_fresas:
     compro_fresas = True
 ```
 
-3. Estamos en Verano
+</details>
+
+<details>
+<summary>
+📌 Ejemplo 3: Estamos en Verano
+</summary>
 
 | 🛒 Acción | 🔎 Resultado | 🎯 Consecuencia |
 |------------|--------------|------------------|
@@ -85,7 +92,12 @@ elif hay_melocotones:
     compro_melocotones = True
 ```
 
-4. Estamos en Invierno
+</details>
+
+<details>
+<summary>
+📌 Ejemplo 4: Estamos en Invierno
+</summary>
 
 | 🛒 Acción | 🔎 Resultado | 🎯 Consecuencia |
 |-----------|----------------|-----------------|
@@ -108,6 +120,8 @@ elif hay_melocotones:
 else:
     compro_pizza = True
 ```
+
+</details>
 
 > [!TIP]
 > Cuando una de las condiciones se cumple, **no pasa a comprobar las siguientes**
