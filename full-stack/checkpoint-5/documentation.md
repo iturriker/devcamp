@@ -124,7 +124,7 @@ else:
 </details>
 
 > [!TIP]
-> Cuando una de las condiciones se cumple, **no pasa a comprobar las siguientes**
+> Cuando una de las condiciones se cumple, **no pasa a comprobar las siguientes**.
 
 ---
 
@@ -145,13 +145,13 @@ not condicion
 
 > Esta vez te has levantado con ganas de preparar una pizza, y tus pizzas favoritas son la **margarita** y la **napolitana**. La margarita lleva **tomate 🍅** y **queso 🧀** y la napolitana lleva **tomate 🍅**, **queso 🧀** y **aceitunas 🫒**.
 
-#### Ejemplos
-
 > | Ingrediente | Margarita 🍕 | Napolitana 🍕 |
 > |-------------|--------------|---------------|
 > | Tomate 🍅 | ✔️ | ✔️ |
 > | Queso 🧀 | ✔️ | ✔️ |
 > | Aceitunas 🫒 | ❌ | ✔️ |
+
+#### Ejemplos
 
 <details>
 <summary>
@@ -228,7 +228,7 @@ if hay_tomate and hay_queso:
 </details>
 
 > [!TIP]
-> La anidación de condiciones es fundamental en cualquier proceso lógico.
+> La **anidación de condiciones** es fundamental en cualquier proceso lógico.
 
 ---
 
@@ -276,9 +276,9 @@ match temporada:
 </details>
 
 > [!TIP]
-> Este condicional es muy útil para mantener un orden cuando el **conjunto de alternativas es grande**, aunque como todo, depende del contexto
+> - Este condicional es muy útil para mantener un orden cuando el **conjunto de alternativas es grande**, aunque como todo, depende del contexto.
 >
-> `match-case` **suele ser más eficiente** que las estructuras `if-elif-else` porque en vez de comprobar todas las condiciones una por una las comprueba en conjunto
+> - `match-case` **suele ser más eficiente** que las estructuras `if-elif-else` porque en vez de comprobar todas las condiciones una por una las comprueba en conjunto.
 
 ---
 
@@ -339,7 +339,7 @@ while es_otoño and mis_manzanas < máximo_de_manzanas:
 </details>
 
 > [!TIP]
-> El while es un operador de **bucle delicado**, es importante definir bien cuando empieza y cuando acaba ya que sino **puede entrar en un bucle infinito**
+> El while es un operador de **bucle delicado**, es importante definir bien cuando empieza y cuando acaba ya que sino **puede entrar en un bucle infinito**.
 
 ---
 
@@ -460,7 +460,7 @@ print(f"Manzanas para tirar: {manzanas_para_tirar}")
 </details>
 
 > [!TIP]
-> Permite **crear una lista directamente**, sin tener que definirla primero fuera del bucle
+> Permite **crear una lista directamente**, sin tener que definirla primero fuera del bucle.
 
 ---
 
@@ -529,7 +529,7 @@ print(f"Cada periodo tengo {manzanas_por_periodo:.2f} manzanas.")
 </details>
 
 > [!TIP]
-> Los argumentos son la base de todo programa, son lo que hace que se comporte de manera diferente según el valor del argumento
+> Los argumentos **son la base de todo programa**, son lo que hace que se **comporte de manera diferente** según el valor del argumento.
 
 ---
 
