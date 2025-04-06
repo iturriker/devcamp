@@ -31,6 +31,7 @@ else:
 <summary>
 📌 Ejemplo 1: Estamos en Otoño
 </summary>
+<br>
 
 | 🛒 Acción | 🔎 Resultado | 🎯 Consecuencia |
 |------------|--------------|------------------|
@@ -49,6 +50,7 @@ if hay_manzanas:
 <summary>
 📌 Ejemplo 2: Estamos en Primavera
 </summary>
+<br>
 
 | 🛒 Acción | 🔎 Resultado | 🎯 Consecuencia |
 |------------|--------------|------------------|
@@ -71,6 +73,7 @@ elif hay_fresas:
 <summary>
 📌 Ejemplo 3: Estamos en Verano
 </summary>
+<br>
 
 | 🛒 Acción | 🔎 Resultado | 🎯 Consecuencia |
 |------------|--------------|------------------|
@@ -98,6 +101,7 @@ elif hay_melocotones:
 <summary>
 📌 Ejemplo 4: Estamos en Invierno
 </summary>
+<br>
 
 | 🛒 Acción | 🔎 Resultado | 🎯 Consecuencia |
 |-----------|----------------|-----------------|
@@ -159,7 +163,7 @@ not condicion
 </summary>
 <br>
 
-> Tenemos 🍅 y 🧀, **podemos preparar la margarita**
+Tenemos 🍅 y 🧀, **podemos preparar la margarita**
 
 ```python
 hay_tomate = True
@@ -175,8 +179,9 @@ if hay_tomate and hay_queso:
 <summary>
 📌 Ejemplo 2: Queremos una pizza simple
 </summary>
+<br>
 
-- Por desgracia la nevera está casi vacia y **solo queda 🍅**, así que nuestra pizza será una pizza simple
+Por desgracia la nevera está casi vacia y **solo queda 🍅**, así que nuestra pizza será una pizza simple
 
 ```python
 hay_tomate = True
@@ -192,8 +197,9 @@ if hay_tomate or hay_queso:
 <summary>
 📌 Ejemplo 3: Queremos una napolitana
 </summary>
+<br>
 
-- Tenemos 🍅, 🧀 y 🫒 por lo que **podemos preparar la napolitana** y **también la margarita**
+Tenemos 🍅, 🧀 y 🫒 por lo que **podemos preparar la napolitana** y **también la margarita**
 
 ```python
 hay_tomate = True
@@ -211,8 +217,9 @@ if hay_tomate and hay_queso and hay_aceitunas:
 <summary>
 📌 Ejemplo 4: Queremos solo 1 pizza
 </summary>
+<br>
 
-- Te habrás dado cuenta de que **2 pizzas son demasiado**, solo queremos preparar una. ¿Como lo planteamos? Los ingredientes son los de antes 🍅, 🧀 y 🫒
+Te habrás dado cuenta de que **2 pizzas son demasiado**, solo queremos preparar una. ¿Como lo planteamos? Los ingredientes son los de antes 🍅, 🧀 y 🫒
 
 ```python
 hay_tomate = True
@@ -257,6 +264,7 @@ match variable:
 <summary>
 📌 Ejemplo 1: Fruta por temporada
 </summary>
+<br>
 
 ```python
 temporada = "Invierno"
@@ -306,8 +314,9 @@ while condicion:
 <summary>
 📌 Ejemplo 1: Manzanas de temporada
 </summary>
+<br>
 
-- Todos sabemos que la fruta de temporada siempre es mejor, así que **mientras dure el Otoño 🍁**, vamos a **comprar muchas manzanas 🍏**!
+Todos sabemos que la fruta de temporada siempre es mejor, así que **mientras dure el Otoño 🍁**, vamos a **comprar muchas manzanas 🍏**!
 
 ```python
 es_otoño = True
@@ -322,10 +331,11 @@ while es_otoño:
 <summary>
 📌 Ejemplo 2: Cajón lleno de manzanas
 </summary>
+<br>
 
-- Por un descuido, hemos comprado **demasiadas manzanas🍏**. Esto ocurre porque el bucle while no tiene fin a no ser que nosotros se lo indiquemos, es decir, hemos comprado infinitas 🍏.
+Por un descuido, hemos comprado **demasiadas manzanas🍏**. Esto ocurre porque el bucle while no tiene fin a no ser que nosotros se lo indiquemos, es decir, hemos comprado infinitas 🍏.
 
-- Lo que vamos a hacer para solucionar esto es dejar de comprar 🍏 una vez superado cierto umbral.
+Lo que vamos a hacer para solucionar esto es dejar de comprar 🍏 una vez superado cierto umbral.
 
 ```python
 es_otoño = True
@@ -363,8 +373,9 @@ for elemento in iterable:
 <summary>
 📌 Ejemplo 1: Control de manzanas
 </summary>
+<br>
 
-- Durante tus años de vida tu madre te ha insistido en que **el número 13 y sus múltiplos son el demonio**, y te ha obligado que te deshagas de esas 🍏.
+Durante tus años de vida tu madre te ha insistido en que **el número 13 y sus múltiplos son el demonio**, y te ha obligado que te deshagas de esas 🍏.
 
 ```python
 mis_manzanas = 100
@@ -383,8 +394,9 @@ print(f"Manzanas para tirar: {manzanas_para_tirar}")
 <summary>
 📌 Ejemplo 2: Fruta de temporada
 </summary>
+<br>
 
-- ¿Te encanta la fruta pero nunca sabes de que temporada es cada fruta? ¿Quieres un **sistema para identificarlas**? Prueba con esto
+¿Te encanta la fruta pero nunca sabes de que temporada es cada fruta? ¿Quieres un **sistema para identificarlas**? Prueba con esto
 
 | Fruta         | Temporada        |
 |---------------|------------------|
@@ -448,8 +460,9 @@ nueva_lista = [expresion for item in iterable if condicion]
 <summary>
 📌 Ejemplo 1: Vuelta al control de manzanas
 </summary>
+<br>
 
-- Tu madre no está muy segura de que hayas sacado las 🍏 apropiadas de la caja de 🍏, así que te **exige que se lo presentes de una forma más explicativa**.
+Tu madre no está muy segura de que hayas sacado las 🍏 apropiadas de la caja de 🍏, así que te **exige que se lo presentes de una forma más explicativa**.
 
 ```python
 mis_manzanas = 100
@@ -492,8 +505,9 @@ def mi_funcion(**kwargs):
 <summary>
 📌 Ejemplo 1: Cajón de nuevas manzanas
 </summary>
+<br>
 
-- Entre una cosa y otra, **has tirado demasiadas 🍏**, así que te **toca reponerlas**, pero en vez de reponerlas de una en una quieres comprar todas a la vez.
+Entre una cosa y otra, **has tirado demasiadas 🍏**, así que te **toca reponerlas**, pero en vez de reponerlas de una en una quieres comprar todas a la vez.
 
 ```python
 mis_manzanas = 80
@@ -510,8 +524,9 @@ comprar_manzanas(120)
 <summary>
 📌 Ejemplo 2: Etiquetar manzanas
 </summary>
+<br>
 
-- Ahora que **ya tienes un montón de 🍏** puedes calcular cuanto tiempo te van a durar antes de acabarse
+Ahora que **ya tienes un montón de 🍏** puedes calcular cuanto tiempo te van a durar antes de acabarse
 
 ```python
 mis_manzanas = 200
