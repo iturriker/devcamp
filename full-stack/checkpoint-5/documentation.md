@@ -158,7 +158,7 @@ not condicion
 📌 Ejemplo 1: Queremos una margarita
 </summary>
 
-- Tenemos 🍅 y 🧀, **podemos preparar la margarita**
+> Tenemos 🍅 y 🧀, **podemos preparar la margarita**
 
 ```python
 hay_tomate = True
