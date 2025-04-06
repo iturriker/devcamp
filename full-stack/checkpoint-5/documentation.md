@@ -1,6 +1,6 @@
 # INICIACIÓN A PYTHON
 
-En esta guía encontrarás los principios básicos que debes aprender para empezar a desenvolverte en Python. Comenzaremos con conceptos fundamentales y aumentaremos la complejidad progresivamente.
+En esta guía encontrarás los **principios básicos** que debes aprender para empezar a desenvolverte en **Python**. Comenzaremos con conceptos fundamentales y aumentaremos la complejidad progresivamente.
 
 ---
 
@@ -244,7 +244,7 @@ match variable:
 
 #### Ejemplos
 
-Volvamos a hablar de las temporadas pero esta vez desde un enfoque distinto: **🌸 primavera**, **☀️ verano**, **🍁 otoño**, **❄️ invierno**
+> Volvamos a hablar de las temporadas pero esta vez desde un enfoque distinto: **🌸 primavera**, **☀️ verano**, **🍁 otoño**, **❄️ invierno**
 
 <details>
 <summary>
@@ -267,7 +267,7 @@ match temporada:
         calendario_se_ha_roto = True
 ```
 
-<details>
+</details>
 
 > [!TIP]
 > Este condicional es muy útil para mantener un orden cuando el **conjunto de alternativas es grande**, aunque como todo, depende del contexto
@@ -279,18 +279,23 @@ match temporada:
 
 Los **bucles** permiten **ejecutar un bloque de código repetidamente**. Son fundamentales para **recorrer colecciones** de datos y automatizar tareas repetitivas.
 
-Pasamos a verlo con ejemplos ➡️
-
 ### Bucle while
+
+#### Sintaxis
 
 ```python
 while condicion:
     # Código a ejecutar mientras la condición sea verdadera
 ```
 
-#### Escenario 1 — Manzanas de temporada
+#### Ejemplos
 
-Nuestra madre nos enseñó que la fruta de temporada siempre es mejor, aí que **mientras dure el Otoño 🍁**, vamos a **comprar manzanas 🍏**!
+<details>
+<summary>
+📌 Ejemplo 1: Manzanas de temporada
+</summary>
+
+> Nuestra madre nos enseñó que la fruta de temporada siempre es mejor, aí que **mientras dure el Otoño 🍁**, vamos a **comprar manzanas 🍏**!
 
 ```python
 es_otoño = True
@@ -299,7 +304,12 @@ while es_otoño:
     compro_manzanas = True
 ```
 
-#### Escenario 2 — Cajón está lleno de manzanas
+</details>
+
+<details>
+<summary>
+📌 Ejemplo 2: Cajón lleno de manzanas
+</summary>
 
 Hemos seguido el consejo de nuestra madre, pero hemos comprado **demasiadas manzanas🍏**. Esto ocurre porque el bucle while no tiene fin a no ser que nosotros se lo indiquemos, es decir, hemos comprado infinitas 🍏.
 
@@ -315,17 +325,26 @@ while es_otoño and mis_manzanas < máximo_de_manzanas:
     mis_manzanas += 1
 ```
 
+</details>
+
 > [!TIP]
 > El while es un operador de **bucle delicado**, es importante definir bien cuando empieza y cuando acaba ya que sino **puede entrar en un bucle infinito**
 
 ### Bucle for
+
+#### Sintaxis
 
 ```python
 for elemento in iterable:
     # Código a ejecutar para cada elemento en el iterable
 ```
 
-#### Escenario 1 — Control de manzanas
+#### Ejemplos
+
+<details>
+<summary>
+📌 Ejemplo 1: Control de manzanas
+</summary>
 
 Durante tus años de vida tu madre te ha insistido en que **el número 13 y sus múltiplos son el demonio**, y te ha sugerido que te deshagas de esas 🍏, por si acaso:
 
@@ -340,10 +359,12 @@ for i in range(1, mis_manzanas + 1):
 print(f"Manzanas para tirar: {manzanas_para_tirar}")
 ```
 
-> [!TIP]
-> Al trabajar con bucles `for` numéricos, generalmente se suma 1 unidad al rango definido ya que **los rangos** de python por defecto **no incluyen el último número** de la colección.
+</details>
 
-#### Escenario 2 — Fruta de temporada
+<details>
+<summary>
+📌 Ejemplo 1: Fruta de temporada
+</summary>
 
 ¿Te encanta la fruta pero nunca sabes de que temporada es cada fruta? ¿Quieres un **sistema para identificarlas**? Prueba con esto
 
@@ -382,6 +403,11 @@ for fruta in frutas:
     print(f"La fruta {fruta} es de la temporada {temporada}")
 ```
 
+<details>
+
+> [!TIP]
+> Al trabajar con bucles `for` numéricos, generalmente se suma 1 unidad al rango definido ya que **los rangos** de python por defecto **no incluyen el último número** de la colección.
+
 ---
 
 ## 📋 Listas por Comprensión
@@ -390,8 +416,6 @@ Las **listas por comprensión** permiten crear listas de manera concisa y eficie
 ```python
 nueva_lista = [expresion for item in iterable if condicion]
 ```
-
-Pasamos a verlo con ejemplos ➡️
 
 #### Escenario 1 — Vuelta al control de manzanas
 
@@ -425,8 +449,6 @@ def mi_funcion(**kwargs):
 ```
 
 Un **argumento** es un valor que se pasa a una **función cuando se llama**. Permiten que la función realice operaciones con datos específicos.
-
-Veamos unos ejemplos ➡️
 
 #### Escenario 1 — Cajón de nuevas manzanas
 
