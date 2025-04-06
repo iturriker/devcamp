@@ -132,7 +132,75 @@ else:
 
 ---
 
-### Condicionales con operadores lógicos: and - or - not
+### Condicional match-case
+
+#### Sintaxis
+
+```python
+match variable:
+    case valor_1:
+        # Código a ejecutar si la variable es igual a valor_1
+    case valor_2:
+        # Código a ejecutar si la variable es igual a valor_2
+    case _:
+        # Código a ejecutar si no coincide con ningún caso
+```
+
+#### Contexto
+
+> Te has planteado cambiar el enfoque, y en vez de ir al super a buscar la fruta, primero compruebas la temporada actual para así comprar la fruta en función de ello: **🌸 primavera**, **☀️ verano**, **🍁 otoño**, **❄️ invierno**
+
+#### Ejemplos
+
+<details>
+<summary>
+📌 Ejemplo 1: Fruta por temporada
+</summary>
+<br>
+
+```python
+temporada = "Invierno"
+
+match temporada:
+    case "Verano":
+        compro_melocotones = True
+    case "Otoño":
+        compro_manzana = True
+    case "Invierno":
+        compro_mandarina = True
+    case "Primavera":
+        compro_fresas = True
+    case _:
+        calendario_se_ha_roto = True
+```
+
+</details>
+
+> [!TIP]
+> - Este condicional es muy útil para mantener un orden cuando el **conjunto de alternativas es grande**, aunque como todo, depende del contexto.
+>
+> - `match-case` **suele ser más eficiente** que las estructuras `if-elif-else` porque en vez de comprobar todas las condiciones una por una las comprueba en conjunto.
+
+---
+
+## 🔗 Operadores
+
+Los **operadores** son símbolos clave que le indican al programa que debe **realizar una operación específica**.
+
+![Esquema de operadores](/operators.png)
+<img src="/operators.png" alt="Esquema de operadores" width="300" height="200">
+
+| Tipo | Proposito | operadores |
+|------------|-------------------------------------------|---------------------|
+| Aritméticos | Para operaciones matemáticas básicas | `+, -, *, /, //, %, **` |
+| Comparación | Comparan valores | `==, !=, >, <, >=, <=` |
+| Lógicos | Combinan condiciones lógicas | `and, or, not` |
+| Asignación | Asignan valores a variables | `=, +=, -=, *=, /=, //=, %=, **=` |
+| Identidad | Comparan objetos (si son el mismo en memoria) | `is, is not` |
+| Pertenencia | Comprueban si un valor está en una colección | `in, not in` |
+| Bitwise | Operan a nivel de bits | `&, |, ^, ~, <<, >>` |
+
+###  Operadores lógicos: and - or - not
 
 #### Sintaxis
 
@@ -237,57 +305,6 @@ if hay_tomate and hay_queso:
 
 > [!TIP]
 > La **anidación de condiciones** es fundamental en cualquier proceso lógico.
-
----
-
-### Condicional match-case
-
-#### Sintaxis
-
-```python
-match variable:
-    case valor_1:
-        # Código a ejecutar si la variable es igual a valor_1
-    case valor_2:
-        # Código a ejecutar si la variable es igual a valor_2
-    case _:
-        # Código a ejecutar si no coincide con ningún caso
-```
-
-#### Contexto
-
-> Te has planteado cambiar el enfoque, y en vez de ir al super a buscar la fruta, primero compruebas la temporada actual para así comprar la fruta en función de ello: **🌸 primavera**, **☀️ verano**, **🍁 otoño**, **❄️ invierno**
-
-#### Ejemplos
-
-<details>
-<summary>
-📌 Ejemplo 1: Fruta por temporada
-</summary>
-<br>
-
-```python
-temporada = "Invierno"
-
-match temporada:
-    case "Verano":
-        compro_melocotones = True
-    case "Otoño":
-        compro_manzana = True
-    case "Invierno":
-        compro_mandarina = True
-    case "Primavera":
-        compro_fresas = True
-    case _:
-        calendario_se_ha_roto = True
-```
-
-</details>
-
-> [!TIP]
-> - Este condicional es muy útil para mantener un orden cuando el **conjunto de alternativas es grande**, aunque como todo, depende del contexto.
->
-> - `match-case` **suele ser más eficiente** que las estructuras `if-elif-else` porque en vez de comprobar todas las condiciones una por una las comprueba en conjunto.
 
 ---
 
