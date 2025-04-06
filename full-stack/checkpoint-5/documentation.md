@@ -244,7 +244,7 @@ match variable:
 
 #### Ejemplos
 
-> Volvamos a hablar de las temporadas pero esta vez desde un enfoque distinto: **🌸 primavera**, **☀️ verano**, **🍁 otoño**, **❄️ invierno**
+> Te has planteado cambiar el enfoque, y en vez de ir al super a buscar la fruta, primero compruebas la temporada actual para así comprar la fruta en función de ello: **🌸 primavera**, **☀️ verano**, **🍁 otoño**, **❄️ invierno**
 
 <details>
 <summary>
@@ -271,6 +271,7 @@ match temporada:
 
 > [!TIP]
 > Este condicional es muy útil para mantener un orden cuando el **conjunto de alternativas es grande**, aunque como todo, depende del contexto
+>
 > `match-case` **suele ser más eficiente** que las estructuras `if-elif-else` porque en vez de comprobar todas las condiciones una por una las comprueba en conjunto
 
 ---
@@ -290,12 +291,14 @@ while condicion:
 
 #### Ejemplos
 
+> Últimamente te has **aficionado especialmente a las manzanas 🍏**. Desconoces el motivo, solo sabes que te encantan.
+
 <details>
 <summary>
 📌 Ejemplo 1: Manzanas de temporada
 </summary>
 
-> Nuestra madre nos enseñó que la fruta de temporada siempre es mejor, aí que **mientras dure el Otoño 🍁**, vamos a **comprar manzanas 🍏**!
+- Todos sabemos que la fruta de temporada siempre es mejor, así que **mientras dure el Otoño 🍁**, vamos a **comprar muchas manzanas 🍏**!
 
 ```python
 es_otoño = True
@@ -311,9 +314,9 @@ while es_otoño:
 📌 Ejemplo 2: Cajón lleno de manzanas
 </summary>
 
-Hemos seguido el consejo de nuestra madre, pero hemos comprado **demasiadas manzanas🍏**. Esto ocurre porque el bucle while no tiene fin a no ser que nosotros se lo indiquemos, es decir, hemos comprado infinitas 🍏.
+- Por un descuido, hemos comprado **demasiadas manzanas🍏**. Esto ocurre porque el bucle while no tiene fin a no ser que nosotros se lo indiquemos, es decir, hemos comprado infinitas 🍏.
 
-Lo que vamos a hacer para solucionar esto es dejar de comprar 🍏 una vez superado cierto umbral:
+- Lo que vamos a hacer para solucionar esto es dejar de comprar 🍏 una vez superado cierto umbral.
 
 ```python
 es_otoño = True
@@ -341,12 +344,14 @@ for elemento in iterable:
 
 #### Ejemplos
 
+> Al ver tantas manzanas 🍏 en el cajón de manzanas 🍏 **tu madre se ha empezado a hacer preguntas**, y te has metido en un lio!
+
 <details>
 <summary>
 📌 Ejemplo 1: Control de manzanas
 </summary>
 
-Durante tus años de vida tu madre te ha insistido en que **el número 13 y sus múltiplos son el demonio**, y te ha sugerido que te deshagas de esas 🍏, por si acaso:
+- Durante tus años de vida tu madre te ha insistido en que **el número 13 y sus múltiplos son el demonio**, y te ha obligado que te deshagas de esas 🍏.
 
 ```python
 mis_manzanas = 100
@@ -366,7 +371,7 @@ print(f"Manzanas para tirar: {manzanas_para_tirar}")
 📌 Ejemplo 1: Fruta de temporada
 </summary>
 
-¿Te encanta la fruta pero nunca sabes de que temporada es cada fruta? ¿Quieres un **sistema para identificarlas**? Prueba con esto
+- ¿Te encanta la fruta pero nunca sabes de que temporada es cada fruta? ¿Quieres un **sistema para identificarlas**? Prueba con esto
 
 | Fruta         | Temporada        |
 |---------------|------------------|
@@ -403,7 +408,7 @@ for fruta in frutas:
     print(f"La fruta {fruta} es de la temporada {temporada}")
 ```
 
-<details>
+</details>
 
 > [!TIP]
 > Al trabajar con bucles `for` numéricos, generalmente se suma 1 unidad al rango definido ya que **los rangos** de python por defecto **no incluyen el último número** de la colección.
@@ -411,15 +416,23 @@ for fruta in frutas:
 ---
 
 ## 📋 Listas por Comprensión
+
 Las **listas por comprensión** permiten crear listas de manera concisa y eficiente **sin necesidad de usar un bucle** `for` o `while` explícito. A nivel de lógica, no deja de ser una **versión resumida** de la sintaxis `for-if` tradicional.
+
+#### Sintaxis
 
 ```python
 nueva_lista = [expresion for item in iterable if condicion]
 ```
 
-#### Escenario 1 — Vuelta al control de manzanas
+#### Ejemplos
 
-Tu madre no está muy segura de que hayas sacado las 🍏 apropiadas de la caja de 🍏, así que te **exige que se lo presentes de una forma más explicativa**.
+<details>
+<summary>
+📌 Ejemplo 1: Vuelta al control de manzanas
+</summary>
+
+- Tu madre no está muy segura de que hayas sacado las 🍏 apropiadas de la caja de 🍏, así que te **exige que se lo presentes de una forma más explicativa**.
 
 ```python
 mis_manzanas = 100
@@ -428,12 +441,18 @@ manzanas_para_tirar = [i for i in range(1, mis_manzanas + 1) if i % 13 == 0]
 print(f"Manzanas para tirar: {manzanas_para_tirar}")
 ```
 
+</details>
+
 > [!TIP]
 > Permite **crear una lista directamente**, sin tener que definirla primero fuera del bucle
 
 ---
 
 ## 🎯 Argumentos
+
+Un **argumento** es un valor que se pasa a una **función cuando se llama**. Permiten que la función realice operaciones con datos específicos.
+
+#### Sintaxis
 
 ```python
 def mi_funcion(arg1, arg2):
@@ -448,11 +467,14 @@ def mi_funcion(**kwargs):
         # Código que usa los argumentos
 ```
 
-Un **argumento** es un valor que se pasa a una **función cuando se llama**. Permiten que la función realice operaciones con datos específicos.
+#### Ejemplos
 
-#### Escenario 1 — Cajón de nuevas manzanas
+<details>
+<summary>
+📌 Ejemplo 1: Cajón de nuevas manzanas
+</summary>
 
-Entre una cosa y otra, **has tirado demasiadas 🍏**, así que te **toca reponerlas**, pero en vez de reponerlas de una en una quieres comprar todas a la vez.
+- Entre una cosa y otra, **has tirado demasiadas 🍏**, así que te **toca reponerlas**, pero en vez de reponerlas de una en una quieres comprar todas a la vez.
 
 ```python
 mis_manzanas = 80
@@ -463,9 +485,14 @@ def comprar_manzanas(manzanas):
 comprar_manzanas(120)
 ```
 
-#### Escenario 2 — Etiquetar manzanas
+</details>
 
-Ahora que **ya tienes un montón de 🍏** puedes calcular cuanto tiempo te van a durar antes de acabarse
+<details>
+<summary>
+📌 Ejemplo 2: Etiquetar manzanas
+</summary>
+
+- Ahora que **ya tienes un montón de 🍏** puedes calcular cuanto tiempo te van a durar antes de acabarse
 
 ```python
 mis_manzanas = 200
@@ -480,6 +507,8 @@ manzanas_por_periodo = calcular_manzanas(mis_manzanas, periodos)
 print(f"Cada periodo tengo {manzanas_por_periodo:.2f} manzanas.")
 
 ```
+
+</details>
 
 > [!TIP]
 > Los argumentos son la base de todo programa, son lo que hace que se comporte de manera diferente según el valor del argumento
