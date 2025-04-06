@@ -157,8 +157,7 @@ not condicion
 <summary>
 📌 Ejemplo 1: Queremos una margarita
 </summary>
-
-<!-- línea en blanco aquí mejora el espaciado -->
+<br>
 
 > Tenemos 🍅 y 🧀, **podemos preparar la margarita**
 
