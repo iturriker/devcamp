@@ -30,6 +30,7 @@ Imagina que hoy te has levantado con muchas ganas de comer frutas y que tus frut
 <details>
 <summary>
 📌 Ejemplo 1: Estamos en Otoño
+</summary>
 
 | 🛒 Acción | 🔎 Resultado | 🎯 Consecuencia |
 |------------|--------------|------------------|
@@ -41,9 +42,10 @@ hay_manzanas = True
 if hay_manzanas:
     compro_manzanas = True
 ```
-</summary>
 
-2. Estamos en Primavera
+<summary>
+📌 Ejemplo 2: Estamos en Primavera
+</summary>
 
 | 🛒 Acción | 🔎 Resultado | 🎯 Consecuencia |
 |------------|--------------|------------------|
