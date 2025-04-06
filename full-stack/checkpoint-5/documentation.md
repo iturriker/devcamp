@@ -187,8 +187,7 @@ match temporada:
 
 Los **operadores** son símbolos clave que le indican al programa que debe **realizar una operación específica**.
 
-![Esquema de operadores](/full-stack/checkpoint-5/operators.png)
-<img src="/full-stack/checkpoint-5/operators.png" alt="Esquema de operadores" width="300" height="200">
+<img src="/full-stack/checkpoint-5/operators.png" alt="Esquema de operadores" width="600" height="326">
 
 | Tipo | Proposito | operadores |
 |------------|-------------------------------------------|---------------------|
