@@ -43,6 +43,7 @@ if hay_manzanas:
     compro_manzanas = True
 ```
 
+<details>
 <summary>
 📌 Ejemplo 2: Estamos en Primavera
 </summary>
