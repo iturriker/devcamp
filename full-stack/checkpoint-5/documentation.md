@@ -8,8 +8,6 @@ En esta guía encontrarás los principios básicos que debes aprender para empez
 
 Un **condicional** es una **estructura de control** que permite ejecutar un bloque de código **solo cuando se cumple una determinada condición** (o conjunto de condiciones).
 
-Vamos a verlo con diferentes ejemplos ➡️
-
 ### Condicionales: if - elif - else
 
 #### Sintaxis
@@ -126,6 +124,8 @@ else:
 > [!TIP]
 > Cuando una de las condiciones se cumple, **no pasa a comprobar las siguientes**
 
+---
+
 ### Condicionales con operadores lógicos: and - or - not
 
 #### Sintaxis
@@ -141,13 +141,13 @@ not condicion
 
 #### Ejemplos
 
-Esta vez te has levantado con ganas de preparar una pizza, y tus pizzas favoritas son la **margarita** y la **napolitana**. La margarita lleva **tomate 🍅** y **queso 🧀** y la napolitana lleva **tomate 🍅**, **queso 🧀** y **aceitunas 🫒**.
+> Esta vez te has levantado con ganas de preparar una pizza, y tus pizzas favoritas son la **margarita** y la **napolitana**. La margarita lleva **tomate 🍅** y **queso 🧀** y la napolitana lleva **tomate 🍅**, **queso 🧀** y **aceitunas 🫒**.
 
-| Ingrediente | Margarita 🍕 | Napolitana 🍕 |
-|-------------|--------------|---------------|
-| Tomate 🍅 | ✔️ | ✔️ |
-| Queso 🧀 | ✔️ | ✔️ |
-| Aceitunas 🫒 | ❌ | ✔️ |
+> | Ingrediente | Margarita 🍕 | Napolitana 🍕 |
+> |-------------|--------------|---------------|
+> | Tomate 🍅 | ✔️ | ✔️ |
+> | Queso 🧀 | ✔️ | ✔️ |
+> | Aceitunas 🫒 | ❌ | ✔️ |
 
 <details>
 <summary>
@@ -225,6 +225,8 @@ if hay_tomate and hay_queso:
 
 > [!TIP]
 > La anidación de condiciones es fundamental en cualquier proceso lógico.
+
+---
 
 ### Condicional match-case
 
