@@ -189,15 +189,15 @@ Los **operadores** son símbolos clave que le indican al programa que debe **rea
 
 <img src="/full-stack/checkpoint-5/operators.png" alt="Esquema de operadores" width="600" height="326">
 
-| Tipo | Proposito | operadores |
+| Tipo | Propósito | Operadores |
 |------------|-------------------------------------------|---------------------|
-| Aritméticos | Para operaciones matemáticas básicas | `+, -, *, /, //, %, **` |
-| Comparación | Comparan valores | `==, !=, >, <, >=, <=` |
-| Lógicos | Combinan condiciones lógicas | `and, or, not` |
-| Asignación | Asignan valores a variables | `=, +=, -=, *=, /=, //=, %=, **=` |
-| Identidad | Comparan objetos (si son el mismo en memoria) | `is, is not` |
-| Pertenencia | Comprueban si un valor está en una colección | `in, not in` |
-| Bitwise | Operan a nivel de bits | `&, |, ^, ~, <<, >>` |
+| Aritméticos | Para operaciones matemáticas básicas | `+` `-` `*` `/` `//` `%` `**` |
+| Comparación | Comparan valores | `==` `!=` `>` `<` `>=` `<=` |
+| Lógicos | Combinan condiciones lógicas | `and` `or` `not` |
+| Asignación | Asignan valores a variables | `=` `+=` `-=` `*=` `/=` `//=` `%=` `**=` |
+| Identidad | Comparan objetos (si son el mismo en memoria) | `is` `is not` |
+| Pertenencia | Comprueban si un valor está en una colección | `in` `not in` |
+| Bitwise | Operan a nivel de bits | `&` `\|` `^` `~` `<<` `>>` |
 
 ###  Operadores lógicos: and - or - not
 
@@ -613,15 +613,17 @@ pip uninstall requests
 
 ---
 
-# 🚀 Ejercicios Prácticos
+## 🚀 Ejercicios Prácticos
 
-### 1️⃣ **Bucle FOR:**
+#### 1️⃣ **Bucle for:**
+
 ```python
 for i in range(1, 6):
     print(i)  # Output: 1 2 3 4 5
 ```
 
-### 2️⃣ **Función que suma tres números:**
+#### 2️⃣ **Función que suma tres números:**
+
 ```python
 def suma(a, b, c):
     return a + b + c
@@ -629,13 +631,15 @@ def suma(a, b, c):
 print(suma(1, 2, 3))  # Output: 6
 ```
 
-### 3️⃣ **Función lambda equivalente a `suma`:**
+#### 3️⃣ **Función lambda equivalente a `suma`:**
+
 ```python
 suma_lambda = lambda a, b, c: a + b + c
 print(suma_lambda(1, 2, 3))  # Output: 6
 ```
 
-### 4️⃣ **Verificar si un nombre está en la lista:**
+#### 4️⃣ **Verificar si un nombre está en la lista:**
+
 ```python
 objetivo = 'Enrique'
 nombres = ['Jessica', 'Paul', 'George', 'Henry', 'Adán']
