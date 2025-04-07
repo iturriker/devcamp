@@ -1,6 +1,6 @@
 # INICIACIÓN A PYTHON
 
-En esta guía encontrarás los **principios básicos** que debes aprender para empezar a desenvolverte en **Python**. Comenzaremos con conceptos fundamentales y aumentaremos la complejidad progresivamente.
+En esta guía encontrarás los **principios básicos** que debes aprender para empezar a desenvolverte en **Python**. Está enfocada a como resolver problemas de la **vida real en términos de código**.
 
 ---
 
@@ -349,7 +349,7 @@ while es_otoño:
 </summary>
 <br>
 
-Por un descuido, hemos comprado **demasiadas manzanas🍏**. Esto ocurre porque el bucle while no tiene fin a no ser que nosotros se lo indiquemos, es decir, hemos comprado infinitas 🍏.
+Por un descuido, hemos comprado **demasiadas manzanas🍏**. Esto ocurre porque el bucle while **no tiene fin** a no ser que nosotros se lo indiquemos, es decir, hemos comprado infinitas 🍏.
 
 Lo que vamos a hacer para solucionar esto es dejar de comprar 🍏 una vez superado cierto umbral.
 
@@ -588,7 +588,7 @@ for manzana in manzanas_ordenadas:
 ---
 
 ## 📦 Pip: Gestor de Paquetes
-**pip** es una herramienta para instalar y administrar paquetes de Python. Los paquetes son librerias que contienen funciones predefinidas que puedes usar para hacer tareas específicas.
+**pip** es una herramienta para **instalar y administrar paquetes** de Python. Los paquetes son librerias que contienen **funciones predefinidas** que puedes usar para hacer tareas específicas.
 
 #### Sintaxis
 
@@ -622,7 +622,7 @@ pip install gestor_de_manzanas
 </summary>
 <br>
 
-Parece que la versión de ese gestor se ha quedado obsoleto y necesita una actualización 
+Parece que la versión de ese gestor se ha **quedado obsoleto** y necesita una **actualización**
 
 ```sh
 pip install --upgrade gestor_de_manzanas
@@ -649,21 +649,23 @@ pip uninstall gestor_de_manzanas
 
 #### Contexto
 
-> Llegados a este punto deberias de ser todo un experto de las manzanas 🍏, te atreves a ayudar a tu amigo con los limones?
+> Llegados a este punto deberias de ser todo un **experto de las manzanas 🍏**, te atreves a ayudar a tu amigo con los **limones 🍋**?
 
 #### Ejercicios
 
 <details>
 <summary>
-📌 Ejercicio 1: Contar limones
+📌 Ejercicio 1: Letras de limon
 </summary>
 <br>
 
-#### 1️⃣ **Bucle for:**
+Siempre has tenido **problemas de concentración**, prueba a **deletrear** de la **palabra "limon"** para espabilar un poco
 
 ```python
-for i in range(1, 6):
-    print(i)
+palabra = limon
+
+for letra in palabra:
+    print(letra)
 ```
 
 </details>
@@ -673,6 +675,8 @@ for i in range(1, 6):
 📌 Ejercicio 2: Sumar cajas de limones
 </summary>
 <br>
+
+Tu amigo es un novato, necesita tu ayuda para **contar** cuantos limones hay en sus **cajas de limones 🍋**
 
 ```python
 caja_limones_1 = 25
@@ -693,6 +697,8 @@ print(sumar_limones(caja_limones_1, caja_limones_2, caja_limones_3))
 </summary>
 <br>
 
+Recuerda que el **no entiende de código**, simplificalo para que lo vea **más claro!!**
+
 ```python
 caja_limones_1 = 25
 caja_limones_2 = 40
@@ -709,6 +715,8 @@ print(sumar_limones(caja_limones_1, caja_limones_2, caja_limones_3))
 📌 Ejercicio 4: Verificar que hay limones en la caja de frutas
 </summary>
 <br>
+
+Te ha pedido ayuda para **comprobar** si en su **caja de frutas** hay algún **limón 🍋**. Como buen amigo tienes que ayudarle
 
 ```python
 fruta_objetivo = 'limon'
@@ -731,3 +739,7 @@ else:
 ```
 
 </details>
+
+Si has **llegado hasta aquí** está claro que lo tuyo **más que la pizza 🍕 es la fruta 🍏**, buena elección!
+
+Ah, y recuerda que al igual que la piña 🍍, el **tomate 🍅 también es una fruta**! 👀
