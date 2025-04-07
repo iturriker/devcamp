@@ -381,7 +381,7 @@ for elemento in iterable:
 
 #### Contexto
 
-> Al ver tantas manzanas 🍏 en el cajón de manzanas 🍏 **tu madre se ha empezado a hacer preguntas**, y te has metido en un lio!
+> Al ver tantas manzanas 🍏 en el cajón de manzanas 🍏 **te toca tomar decisiones importantes** sobre el futuro de tus manzanas
 
 #### Ejemplos
 
@@ -391,7 +391,7 @@ for elemento in iterable:
 </summary>
 <br>
 
-Durante tus años de vida tu madre te ha insistido en que **el número 13 y sus múltiplos son el demonio**, y te ha obligado que te deshagas de esas 🍏.
+Nunca te ha gustado **el número 13 y sus múltiplos**, para ti son el demonio, tienes que deshacerte de esas manzanas 🍏
 
 ```python
 mis_manzanas = 100
@@ -408,45 +408,22 @@ print(f"Manzanas para tirar: {manzanas_para_tirar}")
 
 <details>
 <summary>
-📌 Ejemplo 2: Fruta de temporada
+📌 Ejemplo 2: Manzanas de colores
 </summary>
 <br>
 
-¿Te encanta la fruta pero nunca sabes de que temporada es cada fruta? ¿Quieres un **sistema para identificarlas**? Prueba con esto
-
-| Fruta         | Temporada        |
-|---------------|------------------|
-| Manzana       | Otoño            |
-| Naranja       | Invierno         |
-| Plátano       | Todo el año      |
-| Fresa         | Primavera        |
-| Cereza        | Primavera        |
-| Melocotón     | Verano           |
-| Frambuesa     | Verano           |
-| Piña          | Todo el año      |
-| Kiwi          | Invierno         |
-| Granada       | Otoño            |
+Se te ha ocurrido ver cuales de tus **manzanas 🍏** son **rojas** y cuales **verdes**
 
 ```python
-frutas_temporada = {
-    "Manzana": "Otoño",
-    "Naranja": "Invierno",
-    "Plátano": "Todo el año",
-    "Fresa": "Primavera",
-    "Cereza": "Primavera",
-    "Melocotón": "Verano",
-    "Frambuesa": "Verano",
-    "Piña": "Todo el año",
-    "Kiwi": "Invierno",
-    "Granada": "Otoño"
+mis_manzanas = {
+    "manzana1": "rojo",
+    "manzana2": "verde",
+    "manzana3": "amarillo"
 }
 
-# Lista de frutas a comprobar
-frutas = ["Granada", "Kiwi", "Piña", "Fresa"]
-
-for fruta in frutas:
-    temporada = frutas_temporada.get(fruta, "Desconocida")
-    print(f"La fruta {fruta} es de la temporada {temporada}")
+for manzana in mis_manzanas:
+    color = mis_manzanas.get(manzana)
+    print(f"La manzana {manzana} es de color {color}")
 ```
 
 </details>
@@ -468,7 +445,7 @@ nueva_lista = [expresion for item in iterable if condicion]
 
 #### Contexto
 
-
+> Tu madre no se fia mucho de tus cálculos ni de tu **habilidad con las manzanas 🍏**, demuestralé que está equivocada
 
 #### Ejemplos
 
@@ -478,7 +455,7 @@ nueva_lista = [expresion for item in iterable if condicion]
 </summary>
 <br>
 
-Tu madre no está muy segura de que hayas sacado las 🍏 apropiadas de la caja de 🍏, así que te **exige que se lo presentes de una forma más explicativa**.
+Ella no está muy segura de que hayas sacado las 🍏 apropiadas de la caja de 🍏, así que te **exige que se lo presentes de una forma más explicativa**.
 
 ```python
 mis_manzanas = 100
@@ -514,6 +491,8 @@ def mi_funcion(**kwargs):
 ```
 
 #### Contexto
+
+> **Llega el verano**, y es importante tener un buen **suministro de manzanas 🍏** antes de acabar la temporada.
 
 #### Ejemplos
 
@@ -554,7 +533,7 @@ def calcular_manzanas(manzanas, periodos):
 
 manzanas_por_periodo = calcular_manzanas(mis_manzanas, periodos)
 
-print(f"Cada periodo tengo {manzanas_por_periodo:.2f} manzanas.")
+print(f"Cada periodo tengo {manzanas_por_periodo} manzanas.")
 
 ```
 
@@ -565,97 +544,190 @@ print(f"Cada periodo tengo {manzanas_por_periodo:.2f} manzanas.")
 
 ---
 
-
-
-
-
-
-
-
-
-
-
 ## ⚡ Funciones Lambda
-Una **función lambda** es una función **anónima** y de una sola línea. Se usa para operaciones simples.
+Una **función lambda** es una función **anónima** y de una sola línea. Se usa para operaciones simples y mantener el código más claro.
+
+#### Sintaxis
 
 ```python
 lambda argumentos: expresion
 ```
 
-### 📍 Sintaxis:
+#### Contexto
 
+Es hora de **ordenar** un poco el cajón de **manzanas 🍏**, y vamos a hacerlo de una forma simple
 
-### 📍 Ejemplo:
+#### Ejemplos
+
+<details>
+<summary>
+📌 Ejemplo 1: Ordenar manzanas
+</summary>
+<br>
+
+Te ha parecido buena idea ordenar **alfabéticamente por el color**, así que te has puesto a ello
+
 ```python
-suma = lambda x, y: x + y
-print(suma(3, 4))  # Output: 7
+mis_manzanas = [
+    {"nombre": "manzana1", "color": "verde"},
+    {"nombre": "manzana2", "color": "rojo"},
+    {"nombre": "manzana3", "color": "amarillo"},
+    {"nombre": "manzana4", "color": "rojo"},
+]
+
+ordenar = lambda lista: sorted(lista, key=lambda m: m["color"])
+
+manzanas_ordenadas = ordenar(manzanas)
+
+for manzana in manzanas_ordenadas:
+    print(f'{manzana["nombre"]} → {manzana["color"]}')
 ```
 
-✅ Se utilizan principalmente en funciones de orden superior como `map()`, `filter()` y `sorted()`.
+</details>
 
 ---
 
 ## 📦 Pip: Gestor de Paquetes
-**pip** es una herramienta para instalar y administrar paquetes de Python.
+**pip** es una herramienta para instalar y administrar paquetes de Python. Los paquetes son librerias que contienen funciones predefinidas que puedes usar para hacer tareas específicas.
 
-📌 **Instalar un paquete:**
+#### Sintaxis
+
 ```sh
-pip install requests
+pip acción paquete
 ```
-📌 **Actualizar un paquete:**
+
+#### Contexto
+
+> Todo esto no ha convencido a tu madre, así que no te queda otra que instalar un buen **gestor de manzanas 🍏** antes de que te metas en un buen lio!
+
+#### Ejemplos
+
+<details>
+<summary>
+📌 Ejemplo 1: Instalar un gestor
+</summary>
+<br>
+
+Vamos a **instalar** un gestor que nos **ayude** con este caos
+
 ```sh
-pip install --upgrade requests
+pip install gestor_de_manzanas
 ```
-📌 **Desinstalar un paquete:**
+
+</details>
+
+<details>
+<summary>
+📌 Ejemplo 2: Actualizar el gestor
+</summary>
+<br>
+
+Parece que la versión de ese gestor se ha quedado obsoleto y necesita una actualización 
+
 ```sh
-pip uninstall requests
+pip install --upgrade gestor_de_manzanas
 ```
+</details>
+
+<details>
+<summary>
+📌 Ejemplo 3: Desinstalar el gestor
+</summary>
+<br>
+
+Despues de tanto trastear has notado que te gusta el código, así que decides **borrar el gestor** para **manejar las manzanas 🍏 tu mismo**
+
+```sh
+pip uninstall gestor_de_manzanas
+```
+
+</details>
 
 ---
 
 ## 🚀 Ejercicios Prácticos
 
+#### Contexto
+
+> Llegados a este punto deberias de ser todo un experto de las manzanas 🍏, te atreves a ayudar a tu amigo con los limones?
+
+#### Ejercicios
+
+<details>
+<summary>
+📌 Ejercicio 1: Contar limones
+</summary>
+<br>
+
 #### 1️⃣ **Bucle for:**
 
 ```python
 for i in range(1, 6):
-    print(i)  # Output: 1 2 3 4 5
+    print(i)
 ```
 
-#### 2️⃣ **Función que suma tres números:**
+</details>
+
+<details>
+<summary>
+📌 Ejercicio 2: Sumar cajas de limones
+</summary>
+<br>
 
 ```python
-def suma(a, b, c):
+caja_limones_1 = 25
+caja_limones_2 = 40
+caja_limones_3 = 15
+
+def sumar_limones(a, b, c):
     return a + b + c
 
-print(suma(1, 2, 3))  # Output: 6
+print(sumar_limones(caja_limones_1, caja_limones_2, caja_limones_3))
 ```
 
-#### 3️⃣ **Función lambda equivalente a `suma`:**
+</details>
+
+<details>
+<summary>
+📌 Ejercicio 3: Vuelta a sumar limones
+</summary>
+<br>
 
 ```python
-suma_lambda = lambda a, b, c: a + b + c
-print(suma_lambda(1, 2, 3))  # Output: 6
+caja_limones_1 = 25
+caja_limones_2 = 40
+caja_limones_3 = 15
+
+sumar_limones = lambda a, b, c: a + b + c
+print(sumar_limones(caja_limones_1, caja_limones_2, caja_limones_3))
 ```
 
-#### 4️⃣ **Verificar si un nombre está en la lista:**
+</details>
+
+<details>
+<summary>
+📌 Ejercicio 4: Verificar que hay limones en la caja de frutas
+</summary>
+<br>
 
 ```python
-objetivo = 'Enrique'
-nombres = ['Jessica', 'Paul', 'George', 'Henry', 'Adán']
-encontrado = False
+fruta_objetivo = 'limon'
+frutas = ['manzana', 'kiwi', 'platano', 'limon', 'pera']
+hay_limon = False
 
 # Usando lista de compresión
-encontrado = [True for nombre in nombres if nombre == objetivo]
+hay_limon = [True for fruta in frutas if fruta == fruta_objetivo]
 
 # Usando un bucle for
-for nombre in nombres:
-    if nombre == objetivo:
-        encontrado = True
+for fruta in frutas:
+    if fruta == fruta_objetivo:
+        hay_limon = True
         break
 
-if encontrado:
-    print(f"{objetivo} está en la lista")
+if hay_limon:
+    print(f"Hay {fruta_objetivo} en la caja")
 else:
-    print(f"{objetivo} no está en la lista")
+    print(f"No hay {fruta_objetivo} en la caja")
 ```
+
+</details>
