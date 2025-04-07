@@ -545,6 +545,7 @@ print(f"Cada periodo tengo {manzanas_por_periodo} manzanas.")
 ---
 
 ## ⚡ Funciones Lambda
+
 Una **función lambda** es una función **anónima** y de una sola línea. Se usa para operaciones simples y mantener el código más claro.
 
 #### Sintaxis
@@ -587,58 +588,77 @@ for manzana in manzanas_ordenadas:
 
 ---
 
-## 📦 Pip: Gestor de Paquetes
-**pip** es una herramienta para **instalar y administrar paquetes** de Python. Los paquetes son librerias que contienen **funciones predefinidas** que puedes usar para hacer tareas específicas.
+## 📦 Paquetes pip
+
+**pip** es una herramienta para **instalar y administrar paquetes** de Python. Los paquetes son librerias que contienen **funciones, clases o herramientas ya programadas** que puedes usar para hacer tareas específicas, sin tener que escribirlo todo tú mismo.
 
 #### Sintaxis
 
-```sh
-pip acción paquete
+```python
+import paquete
 ```
 
 #### Contexto
 
-> Todo esto no ha convencido a tu madre, así que no te queda otra que instalar un buen **gestor de manzanas 🍏** antes de que te metas en un buen lio!
+> Todo esto no ha convencido a tu madre, así que no te queda otra que importar un buen **gestor de manzanas 🍏** antes de que te metas en un lío con tanto desorden frutal!
 
 #### Ejemplos
 
 <details>
 <summary>
-📌 Ejemplo 1: Instalar un gestor
+📌 Ejemplo 1: Importar paquetes y funciones
 </summary>
 <br>
 
-Vamos a **instalar** un gestor que nos **ayude** con este caos
+Vamos a **importar** unos gestores que nos **ayuden a organizar** este caos
 
-```sh
-pip install gestor_de_manzanas
+```python
+import gestor_de_manzanas
+import gestor_de_limones
+from gestor_de_kiwis import añadir_kiwis_aleatorios
 ```
 
 </details>
 
 <details>
 <summary>
-📌 Ejemplo 2: Actualizar el gestor
+📌 Ejemplo 2: Usar funciones de un paquete
 </summary>
 <br>
 
-Parece que la versión de ese gestor se ha **quedado obsoleto** y necesita una **actualización**
+Podemos usar las **funciones del gestor** de manzanas para **añadir manzanas 🍏** de forma aleatoria
 
-```sh
-pip install --upgrade gestor_de_manzanas
+```python
+import gestor_de_manzanas
+
+mis manzanas = 0
+mis_manzanas += gestor_de_manzanas.añadir_manzanas_aleatorias()
+
+print(f"Ahora tienes {mis_manzanas} manzanas 🍏")
 ```
+
 </details>
 
 <details>
 <summary>
-📌 Ejemplo 3: Desinstalar el gestor
+📌 Ejemplo 3: Combinar varias frutas
 </summary>
 <br>
 
-Despues de tanto trastear has notado que te gusta el código, así que decides **borrar el gestor** para **manejar las manzanas 🍏 tu mismo**
+Vamos a crear una cosecha variada con manzanas 🍏, limones 🍋 y kiwis 🥝
 
-```sh
-pip uninstall gestor_de_manzanas
+```python
+import gestor_de_manzanas
+import gestor_de_limones
+from gestor_de_kiwis import añadir_kiwis_aleatorios
+
+frutas = []
+frutas += gestor_de_manzanas.añadir_manzanas_aleatorias(5)
+frutas += gestor_de_limones.añadir_limones_aleatorios(3)
+frutas += añadir_kiwis_aleatorios(2)
+
+for fruta in frutas:
+    print(f"🍉 Añadida: {fruta}")
 ```
 
 </details>
